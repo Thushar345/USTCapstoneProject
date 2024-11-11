@@ -1,0 +1,87 @@
+<h2>Add New Incident</h2>
+<div class="form-container">
+  <div class="form-header text-center">
+    <h2>Incident Form</h2>
+  </div>
+  <form id="incidentForm">
+    <div class="form-group">
+      <label for="name">user Name:</label>
+      <input
+        type="text"
+        [(ngModel)]="incidentObj.name"
+        class="form-control"
+        id="name"
+        name="name"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="incidentType">Incident Type:</label>
+      <input
+        type="text"
+        [(ngModel)]="incidentObj.incidentType"
+        class="form-control"
+        id="incidentType"
+        name="incidentType"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="location">Location:</label>
+      <input
+        type="text"
+        [(ngModel)]="incidentObj.location"
+        class="form-control"
+        id="location"
+        name="location"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="incidentDateTime">Incident Date & Time:</label>
+      <input
+        type="datetime-local"
+        [(ngModel)]="incidentObj.incidentDateTime"
+        class="form-control"
+        id="incidentDateTime"
+        name="incidentDateTime"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="severity">Severity:</label>
+      <input
+        type="text"
+        [(ngModel)]="incidentObj.severity"
+        class="form-control"
+        id="severity"
+        name="severity"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <textarea
+        [(ngModel)]="incidentObj.description"
+        class="form-control"
+        id="description"
+        name="description"
+        rows="3"
+        required
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="btn btn-primary btn-block"
+      (click)="onSubmit()"
+    >
+      Submit
+    </button>
+  </form>
+</div>
