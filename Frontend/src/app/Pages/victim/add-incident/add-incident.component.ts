@@ -26,7 +26,7 @@ export class AddIncidentComponent {
     debugger;
     this.http.post("https://localhost:7129/api/Incidents", this.incidentObj).subscribe((res: any) => {
       debugger;
-      if (res.id >= 0) 
+      if (res.id > 0) 
         alert("Incident Record Created!");
       else {
         alert("There was an issue creating the incident record");

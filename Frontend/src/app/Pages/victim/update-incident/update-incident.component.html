@@ -1,0 +1,121 @@
+<div class="row pt-2">
+    <div class="col-8">
+      <div class="card">
+        <div class="card-header bg-secondary text-white">Incident List</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of incidentuList; let i = index; trackBy: trackByIndex">
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.name }}</td>
+                        <td>
+                          <button class="btn btn-primary" (click)="onEdit(item)">
+                            Edit
+                          </button>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-4">
+      <div class="card">
+        <div class="card-header bg-secondary text-white">Update Incident</div>
+        <div class="card-body">
+          <form id="incidentForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                [(ngModel)]="incidentObj.name"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="incidentType">Incident Type:</label>
+              <input
+                type="text"
+                [(ngModel)]="incidentObj.incidentType"
+                class="form-control"
+                id="incidentType"
+                name="incidentType"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="location">Location:</label>
+              <input
+                type="text"
+                [(ngModel)]="incidentObj.location"
+                class="form-control"
+                id="location"
+                name="location"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="incidentDateTime">Incident Date & Time:</label>
+              <input
+                type="datetime-local"
+                [(ngModel)]="incidentObj.incidentDateTime"
+                class="form-control"
+                id="incidentDateTime"
+                name="incidentDateTime"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="severity">Severity:</label>
+              <input
+                type="text"
+                [(ngModel)]="incidentObj.severity"
+                class="form-control"
+                id="severity"
+                name="severity"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="description">Description:</label>
+              <textarea
+                [(ngModel)]="incidentObj.description"
+                class="form-control"
+                id="description"
+                name="description"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="row pt-3">
+              <div class="col-6 text-center"></div>
+              <div class="col-6 text-center">
+                <button
+                  class="btn btn-warning"
+                  [disabled]="incidentObj.id === 0"
+                  (click)="onUpdate()"
+                >
+                  Update
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  

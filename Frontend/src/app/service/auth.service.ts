@@ -28,7 +28,7 @@ export class AuthService {
 
       const data = await response.json();
       return data.result || { token: null };
-    } catch (error) {
+    } catch (error:any) {
       throw new Error('Error during login: ' + error.message);
     }
   }

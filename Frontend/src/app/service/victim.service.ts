@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+@Injectable({
 
-@Component({
-  selector: 'app-victim-service',
-  standalone: true,
-  imports: [],
-  templateUrl: './victim-service.component.html',
-  styleUrls: ['./victim-service.component.css']
-})
+  providedIn: 'root'
+ 
+ })
+
+
 export class VictimServiceComponent {
    constructor(private http: HttpClient) { }
 

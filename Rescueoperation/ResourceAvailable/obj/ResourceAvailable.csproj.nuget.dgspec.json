@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\source\\repos\\Rescueoperation\\ResourceAvailable\\ResourceAvailable.csproj": {}
+    "D:\\USTCapstoneProject\\Rescueoperation\\ResourceAvailable\\ResourceAvailable.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\source\\repos\\Rescueoperation\\ResourceAvailable\\ResourceAvailable.csproj": {
+    "D:\\USTCapstoneProject\\Rescueoperation\\ResourceAvailable\\ResourceAvailable.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\Rescueoperation\\ResourceAvailable\\ResourceAvailable.csproj",
+        "projectUniqueName": "D:\\USTCapstoneProject\\Rescueoperation\\ResourceAvailable\\ResourceAvailable.csproj",
         "projectName": "ResourceAvailable",
-        "projectPath": "C:\\Users\\Administrator\\source\\repos\\Rescueoperation\\ResourceAvailable\\ResourceAvailable.csproj",
+        "projectPath": "D:\\USTCapstoneProject\\Rescueoperation\\ResourceAvailable\\ResourceAvailable.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\source\\repos\\Rescueoperation\\ResourceAvailable\\obj\\",
+        "outputPath": "D:\\USTCapstoneProject\\Rescueoperation\\ResourceAvailable\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

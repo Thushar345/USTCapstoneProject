@@ -1,18 +1,13 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './Pages/login/login.component';
-import { AddIncidentComponent } from './Pages/add-incident/add-incident.component';
+import { Routes } from '@angular/router'; // Import RouterModule and Routes
+import { AddIncidentComponent } from './Pages/victim/add-incident/add-incident.component'; // Import your components
+import { ResourceAvlComponent } from './Pages/responder/resource-avl/resource-avl.component';
+import { IncidentDisplayComponent } from './Pages/responder/incident-display/incident-display.component';
+import { UpdateIncidentComponent } from './Pages/victim/update-incident/update-incident.component';
 
+export const routes: Routes = [
+  { path: 'app-add-incident', component: AddIncidentComponent },  // Define route for AddIncidentComponent
+  { path: 'app-resource-avl', component: ResourceAvlComponent },  
+  { path: 'app-incident-display', component: IncidentDisplayComponent },  // Define route for ResourceAvlComponent
+  { path: 'app-update-incident', component: UpdateIncidentComponent  },  // Define route for ResourceAvlComponent
 
-const routes: Routes = [
-  { path: '', component: LoginComponent }, // Default route for login
-  { path: 'add-emp', component: AddIncidentComponent } // Route for the add-emp component
 ];
-
-@NgModule({
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
-  declarations: [LoginComponent, AddIncidentComponent],
-  bootstrap: [LoginComponent] // Bootstrapping directly with the LoginComponent
-})
-export class AppModule { }

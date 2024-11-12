@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using ResourceAvailableAPI.Models;
+using ResourceAvailable.Models;
 
-namespace ResourceAvailableAPI.Repositories
+namespace ResourceAvailable.Repositories
 {
     public interface IResourceRepository
     {

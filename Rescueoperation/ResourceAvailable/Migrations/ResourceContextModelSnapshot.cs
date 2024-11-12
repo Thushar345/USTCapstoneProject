@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ResourceAvailableAPI.Data;
+using ResourceAvailable.Data;
 
 #nullable disable
 
-namespace ResourceAvailableAPI.Migrations
+namespace ResourceAvailable.Migrations
 {
     [DbContext(typeof(ResourceContext))]
     partial class ResourceContextModelSnapshot : ModelSnapshot
@@ -21,7 +21,7 @@ namespace ResourceAvailableAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ResourceAvailableAPI.Models.Resource", b =>
+            modelBuilder.Entity("ResourceAvailable.Models.Resource", b =>
                 {
                     b.Property<int>("ResourceId")
                         .ValueGeneratedOnAdd()

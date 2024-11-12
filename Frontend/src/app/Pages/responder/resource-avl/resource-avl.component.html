@@ -1,0 +1,32 @@
+<h2>Resource List</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>ResourceId</th>
+            <th>ResourceType</th>
+            <th>ResourceName</th>
+            <th>NumberOfAvailable</th>
+            <th>TotalAvailable</th>
+            <th>ContactInfo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Use ngFor to loop through the resourceList -->
+          @for (item of resourceList; track $index) { 
+            <tr>
+            <td>{{ item.resourceId }}</td>
+            <td>{{ item.resourceType }}</td>
+            <td>{{ item.resourceName }}</td>
+            <td>{{ item.numberOfAvailable }}</td>
+            <td>{{ item.totalAvailable }}</td>
+            <td>{{ item.contactInfo }}</td>
+          </tr>
+        }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

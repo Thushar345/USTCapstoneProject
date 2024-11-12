@@ -2,10 +2,10 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ResourceAvailableAPI.Models;
-using ResourceAvailableAPI.Repositories;
+using ResourceAvailable.Models;
+using ResourceAvailable.Repositories;
 
-namespace ResourceAvailableAPI.Controllers
+namespace ResourceAvailable.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

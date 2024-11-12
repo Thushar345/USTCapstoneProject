@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using VictimAPI.Models;
-using System.Web.Http.Cors;
+using Microsoft.AspNetCore.Cors;
 using VictimAPI.Data;
 using VictimAPI.Repositories;
 
