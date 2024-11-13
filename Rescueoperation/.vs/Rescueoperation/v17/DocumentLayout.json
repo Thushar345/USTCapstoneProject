@@ -3,62 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|c:\\users\\administrator\\desktop\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\data\\allocateresourcecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\data\\allocateresourcecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|c:\\users\\administrator\\desktop\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\models\\allocateresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\models\\allocateresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|c:\\users\\administrator\\desktop\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\models\\allocatedr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\models\\allocatedr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ResourceAlloc/True/SqlTable/dbo.AllocatedRs.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|c:\\users\\administrator\\desktop\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\allocateresourceapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\allocateresourceapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ResourceAlloc/True/SqlTable/dbo.AllocateResources.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|c:\\users\\administrator\\desktop\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\controllers\\allocateresourcecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\controllers\\allocateresourcecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Migrations\\20241113054254_raa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AllocateResourceAPI\\Migrations\\20241113054254_raa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|c:\\users\\administrator\\desktop\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\data\\dto\\allocateresourcedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\data\\dto\\allocateresourcedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|c:\\users\\administrator\\desktop\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\repository\\iallocateresourcerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\repository\\iallocateresourcerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|c:\\users\\administrator\\desktop\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\repository\\allocateresourcerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\repository\\allocateresourcerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4967102-FEE5-4762-917E-63F94F745431}|ResourceAvailable\\ResourceAvailable.csproj|c:\\users\\administrator\\desktop\\ustcapstoneproject\\rescueoperation\\resourceavailable\\controllers\\resourcescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4967102-FEE5-4762-917E-63F94F745431}|ResourceAvailable\\ResourceAvailable.csproj|solutionrelative:resourceavailable\\controllers\\resourcescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|c:\\users\\administrator\\desktop\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D4967102-FEE5-4762-917E-63F94F745431}|ResourceAvailable\\ResourceAvailable.csproj|c:\\users\\administrator\\desktop\\ustcapstoneproject\\rescueoperation\\resourceavailable\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4967102-FEE5-4762-917E-63F94F745431}|ResourceAvailable\\ResourceAvailable.csproj|solutionrelative:resourceavailable\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|c:\\users\\administrator\\desktop\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BA2DBA5C-0E36-47DB-8FCE-E67F47BFA1E7}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4967102-FEE5-4762-917E-63F94F745431}|ResourceAvailable\\ResourceAvailable.csproj|c:\\users\\administrator\\desktop\\ustcapstoneproject\\rescueoperation\\resourceavailable\\repository\\resourcerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -145,7 +101,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -153,144 +109,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dbo.AllocatedRs [Data]",
+              "DocumentIndex": 0,
+              "Title": "dbo.AllocatedRs.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ResourceAlloc/True/SqlTable/dbo.AllocatedRs.sql",
-              "ToolTip": "dbo.AllocatedRs [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ResourceAlloc/True/SqlTable/dbo.AllocatedRs.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-11-13T05:28:51.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AllocatedR.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Models\\AllocatedR.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Models\\AllocatedR.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Models\\AllocatedR.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Models\\AllocatedR.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAIwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T04:23:08.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T05:28:51.164Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AllocateResource.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Models\\AllocateResource.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Models\\AllocateResource.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Models\\AllocateResource.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Models\\AllocateResource.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowA0AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:33:26.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AllocateResourceContext.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Data\\AllocateResourceContext.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Data\\AllocateResourceContext.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Data\\AllocateResourceContext.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Data\\AllocateResourceContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:35:23.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AllocateResourceAPI.csproj",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\AllocateResourceAPI.csproj",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\AllocateResourceAPI.csproj",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\AllocateResourceAPI.csproj",
-              "RelativeToolTip": "AllocateResourceAPI\\AllocateResourceAPI.csproj",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-12T06:25:08.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "dbo.AllocateResources [Data]",
+              "Title": "dbo.AllocateResources.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ResourceAlloc/True/SqlTable/dbo.AllocateResources.sql",
-              "ToolTip": "dbo.AllocateResources [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ResourceAlloc/True/SqlTable/dbo.AllocateResources.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-11-13T05:28:42.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T05:28:42.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AllocateResourceController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Controllers\\AllocateResourceController.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Controllers\\AllocateResourceController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Controllers\\AllocateResourceController.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Controllers\\AllocateResourceController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowCQAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:36:04.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20241113054254_raa.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Migrations\\20241113054254_raa.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Migrations\\20241113054254_raa.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Migrations\\20241113054254_raa.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Migrations\\20241113054254_raa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T05:42:54.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AllocateResourceDto.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Data\\DTO\\AllocateResourceDto.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Data\\DTO\\AllocateResourceDto.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Data\\DTO\\AllocateResourceDto.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Data\\DTO\\AllocateResourceDto.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T05:23:45.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IAllocateResourceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Repository\\IAllocateResourceRepository.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Repository\\IAllocateResourceRepository.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Repository\\IAllocateResourceRepository.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Repository\\IAllocateResourceRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAmwA0AAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:34:03.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AllocateResourceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Repository\\AllocateResourceRepository.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Repository\\AllocateResourceRepository.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Repository\\AllocateResourceRepository.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Repository\\AllocateResourceRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:34:22.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "ResourcesController.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\ResourceAvailable\\Controllers\\ResourcesController.cs",
               "RelativeDocumentMoniker": "ResourceAvailable\\Controllers\\ResourcesController.cs",
@@ -298,25 +135,11 @@
               "RelativeToolTip": "ResourceAvailable\\Controllers\\ResourcesController.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAgwEsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T03:40:26.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T03:40:26.485Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Program.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Program.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Program.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T04:02:02.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\ResourceAvailable\\Program.cs",
               "RelativeDocumentMoniker": "ResourceAvailable\\Program.cs",
@@ -324,25 +147,11 @@
               "RelativeToolTip": "ResourceAvailable\\Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T03:40:32.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T03:40:32.095Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\appsettings.json",
-              "RelativeToolTip": "AllocateResourceAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-12T10:26:39.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "ResourceRepository.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\ResourceAvailable\\Repository\\ResourceRepository.cs",
               "RelativeDocumentMoniker": "ResourceAvailable\\Repository\\ResourceRepository.cs",
@@ -354,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 5,
               "Title": "IResourceRepository.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\ResourceAvailable\\Repository\\IResourceRepository.cs",
               "RelativeDocumentMoniker": "ResourceAvailable\\Repository\\IResourceRepository.cs",
@@ -366,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 6,
               "Title": "IncidentRepository.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\VictimAPI\\Repository\\IncidentRepository.cs",
               "RelativeDocumentMoniker": "VictimAPI\\Repository\\IncidentRepository.cs",
@@ -378,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 7,
               "Title": "IIncidentRepository.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\VictimAPI\\Repository\\IIncidentRepository.cs",
               "RelativeDocumentMoniker": "VictimAPI\\Repository\\IIncidentRepository.cs",
@@ -390,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 9,
               "Title": "ResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AuthAPI\\Models\\Dto\\ResponseDto.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Models\\Dto\\ResponseDto.cs",
@@ -402,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 8,
               "Title": "LoginRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AuthAPI\\Models\\Dto\\LoginRequestDto.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Models\\Dto\\LoginRequestDto.cs",
@@ -414,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 10,
               "Title": "IncidentsController.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\VictimAPI\\Controllers\\IncidentsController.cs",
               "RelativeDocumentMoniker": "VictimAPI\\Controllers\\IncidentsController.cs",
@@ -426,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\VictimAPI\\Program.cs",
               "RelativeDocumentMoniker": "VictimAPI\\Program.cs",
@@ -438,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 12,
               "Title": "AuthAPIController.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AuthAPI\\Controllers\\AuthAPIController.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Controllers\\AuthAPIController.cs",
@@ -450,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AuthAPI\\Program.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Program.cs",
@@ -462,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 14,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AuthAPI\\Service\\AuthService.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Service\\AuthService.cs",
@@ -474,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 15,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\VictimAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "VictimAPI\\Properties\\launchSettings.json",
@@ -486,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 20,
               "Title": "dbo.AspNetUserRoles.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Rescue_Auth/True/SqlTable/dbo.AspNetUserRoles.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Rescue_Auth/True/SqlTable/dbo.AspNetUserRoles.sql",
@@ -495,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 16,
               "Title": "ResourceAvailable.csproj",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\ResourceAvailable\\ResourceAvailable.csproj",
               "RelativeDocumentMoniker": "ResourceAvailable\\ResourceAvailable.csproj",
@@ -503,12 +312,11 @@
               "RelativeToolTip": "ResourceAvailable\\ResourceAvailable.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-11T03:38:23.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T03:38:23.969Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\USTCapstoneProject\\Rescueoperation\\AuthAPI\\appsettings.json",
               "RelativeDocumentMoniker": "AuthAPI\\appsettings.json",
@@ -520,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 21,
               "Title": "dbo.IncidentTbl.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/VictimTbl/True/SqlTable/dbo.IncidentTbl.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/VictimTbl/True/SqlTable/dbo.IncidentTbl.sql",
@@ -529,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 18,
               "Title": "dbo.AspNetUsers.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Rescue_Auth/True/SqlTable/dbo.AspNetUsers.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Rescue_Auth/True/SqlTable/dbo.AspNetUsers.sql",
@@ -538,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 19,
               "Title": "dbo.AspNetUserLogins.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Rescue_Auth/True/SqlTable/dbo.AspNetUserLogins.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Rescue_Auth/True/SqlTable/dbo.AspNetUserLogins.sql",
@@ -547,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 22,
               "Title": "dbo.__EFMigrationsHistory.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Rescue_Auth/True/SqlTable/dbo.__EFMigrationsHistory.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Rescue_Auth/True/SqlTable/dbo.__EFMigrationsHistory.sql",
@@ -556,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 23,
               "Title": "dbo.AspNetUserTokens.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Rescue_Auth/True/SqlTable/dbo.AspNetUserTokens.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Rescue_Auth/True/SqlTable/dbo.AspNetUserTokens.sql",
@@ -565,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 24,
               "Title": "dbo.AspNetRoles.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Rescue_Auth/True/SqlTable/dbo.AspNetRoles.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Rescue_Auth/True/SqlTable/dbo.AspNetRoles.sql",
