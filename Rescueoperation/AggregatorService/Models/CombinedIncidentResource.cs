@@ -11,9 +11,8 @@
         public string Description { get; set; }
 
         // Resource API fields
-        public string ResourceType { get; set; }
         public string ResourceName { get; set; }
-        public int NumberOfAvailable { get; set; }
+        public int QuantityAllocated { get; set; }
     }
 
 }

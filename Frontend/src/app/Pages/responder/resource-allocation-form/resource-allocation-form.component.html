@@ -1,25 +1,26 @@
-<h2>Add New Incident</h2>
+<h2>Add Resource Allocation</h2>
 <div class="form-container">
   <div class="form-header text-center">
-    <h2>Incident Form</h2>
+    <h2>Resource Allocation Form</h2>
   </div>
-  <form id="incidentForm">
+  <form id="resourceAllocationForm">
     <div class="form-group">
-      <label for="name">UserName:</label>
+      <label for="incidentId">Incident ID:</label>
       <input
-        type="text"
-        [(ngModel)]="incidentObj.name"
+        type="number"
+        [(ngModel)]="resourceAllocationObj.incidentId"
         class="form-control"
-        id="name"
-        name="name"
+        id="incidentId"
+        name="incidentId"
         required
       />
     </div>
 
+
     <div class="form-group">
       <label for="incidentType">Incident Type:</label>
       <select
-        [(ngModel)]="incidentObj.incidentType"
+        [(ngModel)]="resourceAllocationObj.incidentType"
         class="form-control"
         id="incidentType"
         name="incidentType"
@@ -34,33 +35,9 @@
     </div>
 
     <div class="form-group">
-      <label for="location">Location:</label>
-      <input
-        type="text"
-        [(ngModel)]="incidentObj.location"
-        class="form-control"
-        id="location"
-        name="location"
-        required
-      />
-    </div>
-
-    <div class="form-group">
-      <label for="incidentDateTime">Incident Date & Time:</label>
-      <input
-        type="datetime-local"
-        [(ngModel)]="incidentObj.incidentDateTime"
-        class="form-control"
-        id="incidentDateTime"
-        name="incidentDateTime"
-        required
-      />
-    </div>
-
-    <div class="form-group">
       <label for="severity">Severity:</label>
       <select
-        [(ngModel)]="incidentObj.severity"
+        [(ngModel)]="resourceAllocationObj.severity"
         class="form-control"
         id="severity"
         name="severity"
@@ -73,15 +50,39 @@
     </div>
 
     <div class="form-group">
-      <label for="description">Description:</label>
-      <textarea
-        [(ngModel)]="incidentObj.description"
+      <label for="location">Location:</label>
+      <input
+        type="text"
+        [(ngModel)]="resourceAllocationObj.location"
         class="form-control"
-        id="description"
-        name="description"
-        rows="3"
+        id="location"
+        name="location"
         required
-      ></textarea>
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="resourceName">Resource Name:</label>
+      <input
+        type="text"
+        [(ngModel)]="resourceAllocationObj.resourceName"
+        class="form-control"
+        id="resourceName"
+        name="resourceName"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="quantityAllocated">Quantity Allocated:</label>
+      <input
+        type="number"
+        [(ngModel)]="resourceAllocationObj.quantityAllocated"
+        class="form-control"
+        id="quantityAllocated"
+        name="quantityAllocated"
+        required
+      />
     </div>
 
     <button

@@ -1,57 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Rescueoperation\\",
+  "WorkspaceRootPath": "D:\\USTCapstoneProject\\Rescueoperation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}|AggregatorService\\AggregatorService.csproj|d:\\rescueoperation\\aggregatorservice\\models\\combinedincidentresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}|AggregatorService\\AggregatorService.csproj|solutionrelative:aggregatorservice\\models\\combinedincidentresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}|AggregatorService\\AggregatorService.csproj|d:\\ustcapstoneproject\\rescueoperation\\aggregatorservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}|AggregatorService\\AggregatorService.csproj|solutionrelative:aggregatorservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}|AggregatorService\\AggregatorService.csproj|d:\\rescueoperation\\aggregatorservice\\service\\dataaggregatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}|AggregatorService\\AggregatorService.csproj|d:\\ustcapstoneproject\\rescueoperation\\aggregatorservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}|AggregatorService\\AggregatorService.csproj|solutionrelative:aggregatorservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}|AggregatorService\\AggregatorService.csproj|d:\\ustcapstoneproject\\rescueoperation\\aggregatorservice\\service\\dataaggregatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}|AggregatorService\\AggregatorService.csproj|solutionrelative:aggregatorservice\\service\\dataaggregatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\rescueoperation\\allocateresourceapi\\migrations\\20241113065839_second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}|AggregatorService\\AggregatorService.csproj|d:\\ustcapstoneproject\\rescueoperation\\aggregatorservice\\models\\combinedincidentresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}|AggregatorService\\AggregatorService.csproj|solutionrelative:aggregatorservice\\models\\combinedincidentresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\models\\resourceallocated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\models\\resourceallocated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\migrations\\20241113065839_second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\migrations\\20241113065839_second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\rescueoperation\\allocateresourceapi\\migrations\\20241113064702_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\migrations\\20241113064702_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\rescueoperation\\allocateresourceapi\\data\\resourceallocationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\data\\resourceallocationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\data\\resourceallocationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\rescueoperation\\allocateresourceapi\\models\\resourceallocated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\models\\resourceallocated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ResourceAllocatedDB/True/SqlTable/dbo.ResourceAllocatedTbl.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\rescueoperation\\allocateresourceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\rescueoperation\\allocateresourceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\rescueoperation\\allocateresourceapi\\controllers\\resourceallocatedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\controllers\\resourceallocatedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\controllers\\resourceallocatedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\rescueoperation\\allocateresourceapi\\repository\\iresourceallocatedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\repository\\iresourceallocatedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\repository\\iresourceallocatedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\rescueoperation\\allocateresourceapi\\repository\\resourceallocatedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|d:\\ustcapstoneproject\\rescueoperation\\allocateresourceapi\\repository\\resourceallocatedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E40D854A-5C12-4961-B766-A7F7CCC6CE27}|AllocateResourceAPI\\AllocateResourceAPI.csproj|solutionrelative:allocateresourceapi\\repository\\resourceallocatedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}|AggregatorService\\AggregatorService.csproj|d:\\rescueoperation\\aggregatorservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}|AggregatorService\\AggregatorService.csproj|solutionrelative:aggregatorservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/VictimTbl/True/SqlTable/dbo.IncidentTbl.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -69,178 +69,165 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CombinedIncidentResource.cs",
-              "DocumentMoniker": "D:\\Rescueoperation\\AggregatorService\\Models\\CombinedIncidentResource.cs",
-              "RelativeDocumentMoniker": "AggregatorService\\Models\\CombinedIncidentResource.cs",
-              "ToolTip": "D:\\Rescueoperation\\AggregatorService\\Models\\CombinedIncidentResource.cs",
-              "RelativeToolTip": "AggregatorService\\Models\\CombinedIncidentResource.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T07:10:47.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20241113065839_second.cs",
-              "DocumentMoniker": "D:\\Rescueoperation\\AllocateResourceAPI\\Migrations\\20241113065839_second.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Migrations\\20241113065839_second.cs",
-              "ToolTip": "D:\\Rescueoperation\\AllocateResourceAPI\\Migrations\\20241113065839_second.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Migrations\\20241113065839_second.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:58:39.783Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\USTCapstoneProject\\Rescueoperation\\AggregatorService\\appsettings.json",
+              "RelativeDocumentMoniker": "AggregatorService\\appsettings.json",
+              "ToolTip": "D:\\USTCapstoneProject\\Rescueoperation\\AggregatorService\\appsettings.json",
+              "RelativeToolTip": "AggregatorService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-13T14:18:23.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "20241113064702_first.cs",
-              "DocumentMoniker": "D:\\Rescueoperation\\AllocateResourceAPI\\Migrations\\20241113064702_first.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Migrations\\20241113064702_first.cs",
-              "ToolTip": "D:\\Rescueoperation\\AllocateResourceAPI\\Migrations\\20241113064702_first.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Migrations\\20241113064702_first.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "Title": "CombinedIncidentResource.cs",
+              "DocumentMoniker": "D:\\USTCapstoneProject\\Rescueoperation\\AggregatorService\\Models\\CombinedIncidentResource.cs",
+              "RelativeDocumentMoniker": "AggregatorService\\Models\\CombinedIncidentResource.cs",
+              "ToolTip": "D:\\USTCapstoneProject\\Rescueoperation\\AggregatorService\\Models\\CombinedIncidentResource.cs",
+              "RelativeToolTip": "AggregatorService\\Models\\CombinedIncidentResource.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:47:02.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ResourceAllocated.cs",
-              "DocumentMoniker": "D:\\Rescueoperation\\AllocateResourceAPI\\Models\\ResourceAllocated.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Models\\ResourceAllocated.cs",
-              "ToolTip": "D:\\Rescueoperation\\AllocateResourceAPI\\Models\\ResourceAllocated.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Models\\ResourceAllocated.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:12:57.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T07:10:47.632Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ResourceAllocationContext.cs",
-              "DocumentMoniker": "D:\\Rescueoperation\\AllocateResourceAPI\\Data\\ResourceAllocationContext.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Data\\ResourceAllocationContext.cs",
-              "ToolTip": "D:\\Rescueoperation\\AllocateResourceAPI\\Data\\ResourceAllocationContext.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Data\\ResourceAllocationContext.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wDUAAAAAAAAAAAAAAA==",
+              "Title": "ResourceAllocated.cs",
+              "DocumentMoniker": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Models\\ResourceAllocated.cs",
+              "RelativeDocumentMoniker": "AllocateResourceAPI\\Models\\ResourceAllocated.cs",
+              "ToolTip": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Models\\ResourceAllocated.cs",
+              "RelativeToolTip": "AllocateResourceAPI\\Models\\ResourceAllocated.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:33:49.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ResourceAllocatedController.cs",
-              "DocumentMoniker": "D:\\Rescueoperation\\AllocateResourceAPI\\Controllers\\ResourceAllocatedController.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Controllers\\ResourceAllocatedController.cs",
-              "ToolTip": "D:\\Rescueoperation\\AllocateResourceAPI\\Controllers\\ResourceAllocatedController.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Controllers\\ResourceAllocatedController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:40:21.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T06:12:57.241Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DataAggregatorService.cs",
-              "DocumentMoniker": "D:\\Rescueoperation\\AggregatorService\\Service\\DataAggregatorService.cs",
-              "RelativeDocumentMoniker": "AggregatorService\\Service\\DataAggregatorService.cs",
-              "ToolTip": "D:\\Rescueoperation\\AggregatorService\\Service\\DataAggregatorService.cs",
-              "RelativeToolTip": "AggregatorService\\Service\\DataAggregatorService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\USTCapstoneProject\\Rescueoperation\\AggregatorService\\Program.cs",
+              "RelativeDocumentMoniker": "AggregatorService\\Program.cs",
+              "ToolTip": "D:\\USTCapstoneProject\\Rescueoperation\\AggregatorService\\Program.cs",
+              "RelativeToolTip": "AggregatorService\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwAkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T05:26:08.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T05:36:20.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataAggregatorService.cs",
+              "DocumentMoniker": "D:\\USTCapstoneProject\\Rescueoperation\\AggregatorService\\Service\\DataAggregatorService.cs",
+              "RelativeDocumentMoniker": "AggregatorService\\Service\\DataAggregatorService.cs",
+              "ToolTip": "D:\\USTCapstoneProject\\Rescueoperation\\AggregatorService\\Service\\DataAggregatorService.cs",
+              "RelativeToolTip": "AggregatorService\\Service\\DataAggregatorService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC0AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T05:26:08.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Program.cs",
+              "RelativeDocumentMoniker": "AllocateResourceAPI\\Program.cs",
+              "ToolTip": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Program.cs",
+              "RelativeToolTip": "AllocateResourceAPI\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwCcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T06:37:29.33Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "dbo.ResourceAllocatedTbl [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ResourceAllocatedDB/True/SqlTable/dbo.ResourceAllocatedTbl.sql",
-              "ToolTip": "dbo.ResourceAllocatedTbl [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-11-13T06:47:50.05Z",
-              "EditorCaption": ""
+              "Title": "20241113065839_second.cs",
+              "DocumentMoniker": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Migrations\\20241113065839_second.cs",
+              "RelativeDocumentMoniker": "AllocateResourceAPI\\Migrations\\20241113065839_second.cs",
+              "ToolTip": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Migrations\\20241113065839_second.cs",
+              "RelativeToolTip": "AllocateResourceAPI\\Migrations\\20241113065839_second.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T06:58:39.783Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Rescueoperation\\AllocateResourceAPI\\Program.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Program.cs",
-              "ToolTip": "D:\\Rescueoperation\\AllocateResourceAPI\\Program.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA3wB8AAAAAAAAAAAAAAA==",
+              "Title": "ResourceAllocationContext.cs",
+              "DocumentMoniker": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Data\\ResourceAllocationContext.cs",
+              "RelativeDocumentMoniker": "AllocateResourceAPI\\Data\\ResourceAllocationContext.cs",
+              "ToolTip": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Data\\ResourceAllocationContext.cs",
+              "RelativeToolTip": "AllocateResourceAPI\\Data\\ResourceAllocationContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:37:29.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Rescueoperation\\AllocateResourceAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\appsettings.json",
-              "ToolTip": "D:\\Rescueoperation\\AllocateResourceAPI\\appsettings.json",
-              "RelativeToolTip": "AllocateResourceAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-13T06:38:08.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T06:33:49.137Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "IResourceAllocatedRepository.cs",
-              "DocumentMoniker": "D:\\Rescueoperation\\AllocateResourceAPI\\Repository\\IResourceAllocatedRepository.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Repository\\IResourceAllocatedRepository.cs",
-              "ToolTip": "D:\\Rescueoperation\\AllocateResourceAPI\\Repository\\IResourceAllocatedRepository.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Repository\\IResourceAllocatedRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "ResourceAllocatedController.cs",
+              "DocumentMoniker": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Controllers\\ResourceAllocatedController.cs",
+              "RelativeDocumentMoniker": "AllocateResourceAPI\\Controllers\\ResourceAllocatedController.cs",
+              "ToolTip": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Controllers\\ResourceAllocatedController.cs",
+              "RelativeToolTip": "AllocateResourceAPI\\Controllers\\ResourceAllocatedController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:35:52.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T06:40:21.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "dbo.ResourceAllocatedTbl.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ResourceAllocatedDB/True/SqlTable/dbo.ResourceAllocatedTbl.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ResourceAllocatedDB/True/SqlTable/dbo.ResourceAllocatedTbl.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-13T06:47:50.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "AllocateResourceAPI\\appsettings.json",
+              "ToolTip": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\appsettings.json",
+              "RelativeToolTip": "AllocateResourceAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-13T06:38:08.512Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "ResourceAllocatedRepository.cs",
-              "DocumentMoniker": "D:\\Rescueoperation\\AllocateResourceAPI\\Repository\\ResourceAllocatedRepository.cs",
-              "RelativeDocumentMoniker": "AllocateResourceAPI\\Repository\\ResourceAllocatedRepository.cs",
-              "ToolTip": "D:\\Rescueoperation\\AllocateResourceAPI\\Repository\\ResourceAllocatedRepository.cs",
-              "RelativeToolTip": "AllocateResourceAPI\\Repository\\ResourceAllocatedRepository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDkAAAA2AAAAAAAAAA==",
+              "Title": "IResourceAllocatedRepository.cs",
+              "DocumentMoniker": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Repository\\IResourceAllocatedRepository.cs",
+              "RelativeDocumentMoniker": "AllocateResourceAPI\\Repository\\IResourceAllocatedRepository.cs",
+              "ToolTip": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Repository\\IResourceAllocatedRepository.cs",
+              "RelativeToolTip": "AllocateResourceAPI\\Repository\\IResourceAllocatedRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:36:20.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T06:35:52.833Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Rescueoperation\\AggregatorService\\Program.cs",
-              "RelativeDocumentMoniker": "AggregatorService\\Program.cs",
-              "ToolTip": "D:\\Rescueoperation\\AggregatorService\\Program.cs",
-              "RelativeToolTip": "AggregatorService\\Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAA3wBgAAAAkAAAAAAAAAA==",
+              "Title": "ResourceAllocatedRepository.cs",
+              "DocumentMoniker": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Repository\\ResourceAllocatedRepository.cs",
+              "RelativeDocumentMoniker": "AllocateResourceAPI\\Repository\\ResourceAllocatedRepository.cs",
+              "ToolTip": "D:\\USTCapstoneProject\\Rescueoperation\\AllocateResourceAPI\\Repository\\ResourceAllocatedRepository.cs",
+              "RelativeToolTip": "AllocateResourceAPI\\Repository\\ResourceAllocatedRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T05:36:20.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T06:36:20.791Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "dbo.IncidentTbl [Data]",
+              "Title": "dbo.IncidentTbl.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/VictimTbl/True/SqlTable/dbo.IncidentTbl.sql",
-              "ToolTip": "dbo.IncidentTbl [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/VictimTbl/True/SqlTable/dbo.IncidentTbl.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-11-13T05:24:23.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T05:24:23.62Z"
             }
           ]
         }
