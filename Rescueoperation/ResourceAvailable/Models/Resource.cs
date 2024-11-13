@@ -1,4 +1,4 @@
-﻿namespace ResourceAvailable.Models {
+﻿namespace ResourceAvailableAPI.Models {
     public partial class Resource
     {
 

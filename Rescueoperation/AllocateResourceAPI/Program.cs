@@ -1,9 +1,9 @@
-using Microsoft.EntityFrameworkCore;
-using ResourceAvailableAPI.Data;
-using ResourceAvailableAPI.Repositories;
-using Microsoft.AspNetCore.Cors;
 
-namespace ResourceAvailableAPI
+using AllocateResourceAPI.Data;
+using AllocateResourceAPI.Repositories;
+using Microsoft.EntityFrameworkCore;
+
+namespace AllocateResourceAPI
 {
     public class Program
     {
@@ -11,18 +11,19 @@ namespace ResourceAvailableAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddDbContext<ResourceContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("csResourceDB")));
-            builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
+            // Add services to the container.
 
             builder.Services.AddControllers();
+            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddDbContext<ResourceAllocationContext>(options =>options.UseSqlServer(builder.Configuration.GetConnectionString("ResourceDb")));
+
+            builder.Services.AddScoped<IResourceAllocatedRepository, ResourceAllocatedRepository>();
 
             var app = builder.Build();
 
-            app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
-
+            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -32,6 +33,7 @@ namespace ResourceAvailableAPI
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
+
 
             app.MapControllers();
 

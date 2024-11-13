@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using ResourceAvailable.Data;
-using ResourceAvailable.Models;
+using ResourceAvailableAPI.Data;
+using ResourceAvailableAPI.Models;
 
-namespace ResourceAvailable.Repositories
+namespace ResourceAvailableAPI.Repositories
 {
     public class ResourceRepository : IResourceRepository
     {

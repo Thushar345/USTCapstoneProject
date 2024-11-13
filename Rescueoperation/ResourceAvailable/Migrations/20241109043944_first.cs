@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
+#nullable disable
 
-namespace ResourceAvailable.Migrations
+namespace ResourceAvailableAPI.Migrations
 {
     /// <inheritdoc />
     public partial class first : Migration

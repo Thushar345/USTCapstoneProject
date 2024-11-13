@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using ResourceAvailable.Models;
+using ResourceAvailableAPI.Models;
 
-namespace ResourceAvailable.Data
+namespace ResourceAvailableAPI.Data
 {
     public partial class ResourceContext : DbContext
     {
