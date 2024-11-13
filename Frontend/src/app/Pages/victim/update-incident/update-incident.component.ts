@@ -29,27 +29,23 @@ export class UpdateIncidentComponent implements OnInit {
     this.loadIncidents();
   }
 
-  // Method to load incidents
   loadIncidents() {
     this.http.get('https://localhost:7129/api/Incidents').subscribe((res: any) => {
       this.incidentuList = res;
     });
   }
 
-  // Method to select an incident for editing
   onEdit(data: any) {
     debugger;
-    this.incidentObj = data; // Assign selected data to incidentObj
+    this.incidentObj = data;
   }
 
-  // Method to update an incident
   onUpdate() {
     this.http.put("https://localhost:7129/api/Incidents/" + this.incidentObj.id, this.incidentObj)
       .subscribe((res: any) => {
-        // Check if the response contains a valid incident object with a valid id
-        if (res && res.id !== 0) {  // Assuming id should not be 0 after update
+        if (res && res.id !== 0) {  
           alert("Incident Record Updated!");
-          this.loadIncidents();  // Optionally reload incidents to reflect changes
+          this.loadIncidents();  
         } else {
           alert("Some Problem in Incident Updation");
         }
