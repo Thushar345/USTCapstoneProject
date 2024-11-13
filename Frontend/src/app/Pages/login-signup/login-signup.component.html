@@ -1,0 +1,69 @@
+<nav class="navbar">
+    <div class="logo">
+        <a routerLink="/"><img src="assets/logo.png" alt="My Logo" width="90"></a>
+    </div>
+    <div class="nav-links">
+        <a routerLink="/login-signup">Login/SignUp</a>
+        <a href="#/about">About</a>
+    </div>
+</nav>
+
+
+<div class="container">
+    <div class="form-box login">
+        <form action="#">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            
+            <button type="submit" class="btn">Login</button>
+            <p>or Login with Google</p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-google'></i></a>
+            </div>
+        </form>
+    </div>
+
+    <div class="form-box register">
+        <form action="#">
+            <h1>Registration</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <button type="submit" class="btn">SignUp</button>
+            <p>or SignUp with Google</p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-google'></i></a>
+            </div>
+        </form>
+    </div>
+
+    <div class="toggle-box">
+        <div class="toggle-panel toggle-left">
+            <h1>Hello, Welcome!</h1>
+            <p>Don't have an account?</p>
+            <button class="btn register-btn">SignUp</button>
+        </div>
+
+        <div class="toggle-panel toggle-right">
+            <h1>Welcome Back!</h1>
+            <p>Already have an account?</p>
+            <button class="btn login-btn">Login</button>
+        </div>
+    </div>
+</div>
