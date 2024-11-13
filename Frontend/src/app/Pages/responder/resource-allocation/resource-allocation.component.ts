@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { AllocateService } from '../../../service/allocate.service';
 
 @Component({
   selector: 'app-resource-allocation',
@@ -8,5 +9,17 @@ import { Component } from '@angular/core';
   styleUrl: './resource-allocation.component.css'
 })
 export class ResourceAllocationComponent {
-
-}
+  allocateService = inject(AllocateService) 
+  allocateList: any[] = []; 
+  ngOnInit(): void { 
+  this.loadResources(); 
+  } 
+  loadResources() { 
+  this.allocateService.GetAllocate().subscribe((res: any) => { 
+  this.allocateList = res; 
+  console.log(this.allocateList);
+  }) 
+  
+  } 
+  
+ } 

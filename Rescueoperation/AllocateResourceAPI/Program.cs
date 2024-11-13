@@ -31,6 +31,8 @@ namespace AllocateResourceAPI
             }
 
             app.UseHttpsRedirection();
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
 
             app.UseAuthorization();
 

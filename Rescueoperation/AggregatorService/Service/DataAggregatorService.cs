@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using AggregatorService.Models;
 using VictimAPI.Models;
-using ResourceAvailableAPI.Models;
+using AllocateResourceAPI.Models;
 
 namespace AggregatorService.Services
 {
@@ -26,13 +26,13 @@ namespace AggregatorService.Services
             var incidents = JsonConvert.DeserializeObject<List<IncidentTbl>>(victimResponse);
 
             // Fetch data from Resource API
-            var resourceResponse = await _httpClient.GetStringAsync(_configuration["ResourceAPI:BaseUrl"] + "/Resources");
-            var resources = JsonConvert.DeserializeObject<List<Resource>>(resourceResponse);
+            var resourceResponse = await _httpClient.GetStringAsync(_configuration["AllocateApi:BaseUrl"] + "/ResourceAllocated");
+            var resources = JsonConvert.DeserializeObject<List<ResourceAllocated>>(resourceResponse);
 
             // Combine data where IncidentTbl.Id equals Resource.ResourceId
             var combinedData = (from incident in incidents
                                 join resource in resources
-                                on incident.Id equals resource.ResourceId  // Matching IncidentTbl.Id and Resource.ResourceId
+                                on incident.Id equals resource.IncidentId  // Matching IncidentTbl.Id and Resource.ResourceId
                                 select new CombinedIncidentResource
                                 {
                                     Id = incident.Id,
@@ -42,9 +42,8 @@ namespace AggregatorService.Services
                                     IncidentDateTime = incident.IncidentDateTime,
                                     Severity = incident.Severity,
                                     Description = incident.Description,
-                                    ResourceType = resource.ResourceType,
                                     ResourceName = resource.ResourceName,
-                                    NumberOfAvailable = resource.NumberOfAvailable
+                                    QuantityAllocated=resource.QuantityAllocated,
                                 }).ToList();
 
             return combinedData;

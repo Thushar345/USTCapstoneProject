@@ -6,9 +6,9 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-update-incident',
   standalone: true,
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './update-incident.component.html',
-  styleUrl: './update-incident.component.css'
+  styleUrls: ['./update-incident.component.css'] // Fixed typo
 })
 export class UpdateIncidentComponent implements OnInit {
  
@@ -22,7 +22,7 @@ export class UpdateIncidentComponent implements OnInit {
     "description": ""
   };
 
-  incidentuList: any[] = []; 
+  incidentList: any[] = []; 
   http = inject(HttpClient); 
 
   ngOnInit(): void {
@@ -31,31 +31,32 @@ export class UpdateIncidentComponent implements OnInit {
 
   loadIncidents() {
     this.http.get('https://localhost:7129/api/Incidents').subscribe((res: any) => {
-      this.incidentuList = res;
+      this.incidentList = res;
     });
   }
 
   onEdit(data: any) {
-    debugger;
-    this.incidentObj = data;
+    this.incidentObj = { ...data }; // Shallow copy to avoid reference issues
+    console.log("Editing Incident:", this.incidentObj); // Verify that `id` and other fields are set correctly
   }
-
+  
   onUpdate() {
-    this.http.put("https://localhost:7129/api/Incidents/" + this.incidentObj.id, this.incidentObj)
-      .subscribe((res: any) => {
-        if (res && res.id !== 0) {  
-          alert("Incident Record Updated!");
-          this.loadIncidents();  
-        } else {
-          alert("Some Problem in Incident Updation");
+    console.log(this.incidentObj)
+    this.http.put(`https://localhost:7129/api/Incidents/${this.incidentObj.id}`, this.incidentObj)
+    .subscribe(
+        (res: any) => {
+          if (res && res.id) {
+            alert("Incident Record Updated!");
+            this.loadIncidents(); 
+          } else {
+            alert("Some Problem in Incident Updation");
+          }
+        },
+        (error) => {
+          console.error('Error occurred:', error);
+          alert("Error while updating the incident.");
         }
-      }, (error) => {
-        console.error('Error occurred:', error);
-        alert("Error while updating the incident.");
-      });
+      );
   }
-  trackByIndex(index: number, item: any): number {
-    return index;
-  }
-
+ 
 }

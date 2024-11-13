@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root' // This will allow it to be injectable globally
+  providedIn: 'root' 
 })
 export class AuthService {
 
-  private apiUrl: string = 'https://localhost:7133/api/AuthAPI/login'; // The URL for your login API
+  private apiUrl: string = 'https://localhost:7133/api/AuthAPI/login';
 
   constructor() { }
 
-  // Login function to authenticate the user with the backend
+  
   async login(username: string, password: string): Promise<any> {
     const loginData = { Username: username, Password: password };
     

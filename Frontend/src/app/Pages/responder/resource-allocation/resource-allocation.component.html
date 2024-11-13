@@ -1,1 +1,34 @@
-<p>resource-allocation works!</p>
+<h2>Resource Allocated List</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>IncidentId</th>
+            <th>AllocationId</th>
+            <th>IncidentType</th>
+            <th>Severity</th>
+            <th>Location</th>
+            <th>ResourceName</th>
+            <th>QuantityAllocated</th>
+          </tr>
+        </thead>
+        <tbody>
+            @for (item of allocateList; track $index) 
+          {
+            <tr>
+              <td>{{item.incidentId}}</td>
+              <td>{{item.allocationId}}</td>
+              <td>{{item.incidentType}}</td>
+              <td>{{item.severity}}</td>
+              <td>{{item.location}}</td>
+              <td>{{item.resourceName}}</td>
+              <td>{{item.quantityAllocated}}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
