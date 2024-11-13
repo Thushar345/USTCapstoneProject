@@ -1,6 +1,7 @@
 # Ignore bin and obj folders in all project subdirectories
 **/bin/
 **/obj/
+**/bin/Debug
 
 # Ignore build output and publish folders
 **/out/
