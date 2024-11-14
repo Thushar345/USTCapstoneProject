@@ -21,11 +21,11 @@ namespace AggregatorService
                     client.BaseAddress = new Uri("https://localhost:7129/api");  // VictimAPI base URL
                 });
 
-            builder.Services.AddHttpClient<DataAggregatorService>("ResourceAPI")
+            builder.Services.AddHttpClient<DataAggregatorService>("AllocateApi")
                 .ConfigureHttpClient(client =>
                 {
                     // Set the base URLs for the microservices
-                    client.BaseAddress = new Uri("https://localhost:7066/api");  // ResourceAPI base URL
+                    client.BaseAddress = new Uri("https://localhost:7240/api");  // ResourceAPI base URL
                 });
 
             builder.Services.AddEndpointsApiExplorer();
