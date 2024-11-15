@@ -1,10 +1,12 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, Pipe, inject } from '@angular/core';
 import { VictimService } from '../../../service/victim/victim.service';
+import { Router, RouterModule } from '@angular/router';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-incident-display',
   standalone: true,
-  imports: [],
+  imports: [RouterModule, DatePipe],
   templateUrl: './incident-display.component.html',
   styleUrl: './incident-display.component.css'
 })
@@ -20,6 +22,13 @@ export class IncidentDisplayComponent implements OnInit{
     console.log(this.incidentList);
     });
     } 
+
+
+    constructor(private router: Router) {}
+    allocateResource(item: any) {
+      // Navigate to another component, passing the selected incident
+      this.router.navigate(['/app-resource-allocation-form'], { state: { incident: item } });
+    }
   }
 
 

@@ -38,7 +38,7 @@ export class RegisterComponent {
       (response) => {
         if (response?.issuccess) {
           console.error('register success');
-          this.router.navigate(['']);
+          this.router.navigate(['app-login']);
         } else {
           console.error('Registration failed:', response?.message || 'Unexpected response format');
         }

@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './Pages/home/auth/login/login.component';
 import { RegisterComponent } from './Pages/home/auth/register/register.component';
 import { HomeComponent } from './Pages/home/home/home.component';
+import { LoginSignupComponent } from './Pages/login-signup/login-signup.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },  
@@ -21,5 +22,6 @@ export const routes: Routes = [
   { path: 'app-resource-avl', component: ResourceAvlComponent },
   { path: 'app-resource-allocation', component: ResourceAllocationComponent },
   { path: 'app-resource-allocation-form', component: ResourceAllocationFormComponent },
-  { path: 'submission-success', component: SubmissionSuccessComponent }
+  { path: 'submission-success', component: SubmissionSuccessComponent },
+  {path: 'login-signup', component: LoginSignupComponent },
 ];

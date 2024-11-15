@@ -1,34 +1,45 @@
-<h2>Resource Allocated List</h2>
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>IncidentId</th>
-            <th>AllocationId</th>
-            <th>IncidentType</th>
-            <th>Severity</th>
-            <th>Location</th>
-            <th>ResourceName</th>
-            <th>QuantityAllocated</th>
-          </tr>
-        </thead>
-        <tbody>
-            @for (item of allocateList; track $index) 
-          {
-            <tr>
-              <td>{{item.incidentId}}</td>
-              <td>{{item.allocationId}}</td>
-              <td>{{item.incidentType}}</td>
-              <td>{{item.severity}}</td>
-              <td>{{item.location}}</td>
-              <td>{{item.resourceName}}</td>
-              <td>{{item.quantityAllocated}}</td>
-            </tr>
-          }
-        </tbody>
-      </table>
-    </div>
+<nav class="navbar">
+  <div class="logo">
+    <a routerLink="/"><img src="assets/logo.png" alt="My Logo" width="90"></a>
   </div>
+  
+  <div class="nav-links">
+    <ul>
+      <li><a routerLink="/app-incident-display" class="btn">Incidents List</a></li>
+      <li><a routerLink="/app-resource-avl" class="btn">Resource Availiable</a></li>
+      <li><a routerLink="/app-resource-allocation" class="btn">Resources Allocated</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="table-container">
+  <table class="modern-table">
+    <thead>
+      <tr>
+        <th>IncidentId</th>
+        <th>AllocationId</th>
+        <th>IncidentType</th>
+        <th>Severity</th>
+        <th>Location</th>
+        <th>ResourceName</th>
+        <th>QuantityAllocated</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Keep the @for loop as it is -->
+      @for (item of allocateList; track $index) { 
+        <tr>
+          <td>{{ item.incidentId }}</td>
+          <td>{{ item.allocationId }}</td>
+          <td>{{ item.incidentType }}</td>
+          <td>{{ item.severity }}</td>
+          <td>{{ item.location }}</td>
+          <td>{{ item.resourceName }}</td>
+          <td>{{ item.quantityAllocated }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
 </div>
