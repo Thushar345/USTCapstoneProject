@@ -6,8 +6,8 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
-  standalone:true,
-  imports:[CommonModule,FormsModule],
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
@@ -17,26 +17,37 @@ export class LoginComponent {
   errorMessage: string = '';
 
   constructor(private http: HttpClient, private router: Router) {}
+
   login() {
-    console.log("Login button clicked!");
-  
+    console.log('Login button clicked!');
+
     const loginPayload = { username: this.username, password: this.password };
-  
+
     this.http.post('https://localhost:7133/api/AuthAPI/login', loginPayload).subscribe(
       (response: any) => {
-        console.log("API Response:", response);  // Log the full response
-  
-        // Check if response.result and response.result.token exist
+        console.log('API Response:', response); // Log the full response
+
         if (response.isSuccess && response.result && response.result.token) {
-          localStorage.setItem('token', response.result.token);  // Store the token correctly
-          this.router.navigate(['']);
+          localStorage.setItem('token', response.result.token); // Store the token correctly
+
+          // Check email domain to navigate accordingly
+          if (this.username.includes('@user.com') || this.username.includes('@gmail.com')) {
+            this.router.navigate(['app-add-incident']);
+          } else if (this.username.includes('@admin.com')) {
+            // Navigate to admin page
+            this.router.navigate(['']);
+          } else {
+            // Fallback in case the domain doesn't match any known pattern
+            this.router.navigate(['app-update']);
+          }
         } else {
           this.errorMessage = 'Login failed. Token is missing or invalid.';
           console.error('Login failed: Token is missing or invalid');
+          this.router.navigate(['/']);
         }
       },
       (error) => {
-        console.error('API Error:', error);  // Log the full error for debugging
+        console.error('API Error:', error); // Log the full error for debugging
         this.errorMessage = 'Invalid credentials or server error.';
       }
     );
