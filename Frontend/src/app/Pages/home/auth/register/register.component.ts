@@ -40,6 +40,7 @@ export class RegisterComponent {
       (response) => {
         // Handle successful registration response
         if (response?.issuccess) {
+
           console.log('Registration successful');
           // Optional: Reset form fields
           this.email = '';
@@ -50,6 +51,7 @@ export class RegisterComponent {
 
           // Redirect to login or home page after successful registration
           this.router.navigate(['app-login']); // Update '/login' as per your route
+
         } else {
           // Handle failure case (invalid response or failure message)
           console.error('Registration success:', response?.message || 'with Unexpected response format');

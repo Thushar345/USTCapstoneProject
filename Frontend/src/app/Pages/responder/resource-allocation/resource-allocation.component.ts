@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { AllocateService } from '../../../service/allocate.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-resource-allocation',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './resource-allocation.component.html',
   styleUrl: './resource-allocation.component.css'
 })
