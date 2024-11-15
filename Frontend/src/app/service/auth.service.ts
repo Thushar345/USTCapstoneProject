@@ -1,35 +1,24 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root' 
+  providedIn: 'root',
 })
 export class AuthService {
+  private apiUrl = 'http://localhost:5000/api/auth';
 
-  private apiUrl: string = 'https://localhost:7133/api/AuthAPI/login';
+  constructor(private http: HttpClient) {}
 
-  constructor() { }
+  login(username: string, password: string) {
+    const loginPayload = { username, password };
+    return this.http.post<any>(`${this.apiUrl}/login`, loginPayload);
+  }
 
-  
-  async login(username: string, password: string): Promise<any> {
-    const loginData = { Username: username, Password: password };
-    
-    try {
-      const response = await fetch(this.apiUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(loginData)
-      });
+  register(user: any) {
+    return this.http.post(`${this.apiUrl}/register`, user);
+  }
 
-      if (!response.ok) {
-        throw new Error('Login failed');
-      }
-
-      const data = await response.json();
-      return data.result || { token: null };
-    } catch (error:any) {
-      throw new Error('Error during login: ' + error.message);
-    }
+  assignRole(email: string, role: string) {
+    return this.http.post(`${this.apiUrl}/AssignRole`, { email, role });
   }
 }

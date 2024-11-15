@@ -1,0 +1,87 @@
+/* Overall page styling */
+:host {
+    display: block;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light grey background for the page */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Centering the success message container */
+  .success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Box styling for the success message */
+  .success-box {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+    width: 100%;
+    border-left: 8px solid #4CAF50; /* Green left border for a unique touch */
+  }
+  
+  /* Heading styling */
+  .success-box h2 {
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Success message */
+  .success-box p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  
+  /* Button styling */
+  .update-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .update-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Hover effect for the button */
+  .update-btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.7); /* Light green shadow */
+  }
+  
+  /* Responsive Design for Mobile Devices */
+  @media (max-width: 600px) {
+    .success-box {
+      padding: 20px;
+    }
+  
+    .success-box h2 {
+      font-size: 1.6rem;
+    }
+  
+    .success-box p {
+      font-size: 1rem;
+    }
+  
+    .update-btn {
+      width: 100%;
+    }
+  }
+  
