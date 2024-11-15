@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { RouterModule } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,RouterLink,RouterModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet],
+  template: `<router-outlet></router-outlet>`, // Loads routed components based on path
 })
 export class AppComponent {
-  title = 'RescueAng';
+  title="dhanush";
 }
+//D:\USTCapstoneProject\Frontend\public

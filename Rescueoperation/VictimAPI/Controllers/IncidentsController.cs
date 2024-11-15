@@ -64,7 +64,7 @@ namespace VictimAPI.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(incident);
         }
 
         // POST: api/Incidents

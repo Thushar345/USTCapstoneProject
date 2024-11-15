@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-incident',
@@ -20,18 +21,18 @@ export class AddIncidentComponent {
     "description": ""
   };
   
-  http = inject(HttpClient); 
+  http = inject(HttpClient);
+  router = inject(Router);  // Inject Router to navigate to submission success page
 
   onSubmit() {
-    debugger;
     this.http.post("https://localhost:7129/api/Incidents", this.incidentObj).subscribe((res: any) => {
-      debugger;
-      if (res.id > 0) 
+      if (res.id > 0) {
         alert("Incident Record Created!");
-      else {
+        // After successful form submission, navigate to the submission-success page
+        this.router.navigate(['/submission-success']);
+      } else {
         alert("There was an issue creating the incident record");
       }
     });
   }
 }
-
