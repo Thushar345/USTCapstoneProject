@@ -1,0 +1,149 @@
+
+<nav class="navbar">
+  <div class="logo">
+    <a routerLink="/"><img src="assets/logo.png" alt="My Logo" width="90"></a>
+  </div>
+</nav>
+
+
+<div class="container my-5">
+  <div class="row g-4">
+    <!-- Incident List -->
+    <div class="col-lg-8">
+      <div class="card border-0 shadow-lg">
+        <div class="card-header tableh text-white">
+          <h5 class="mb-0">Incident List</h5>
+        </div>
+        <div class="card-body">
+          <table class="table table-hover table-bordered align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (item of incidentList; track $index) {
+                <tr>
+                  <td>{{ item.id }}</td>
+                  <td>{{ item.name }}</td>
+                  <td>
+                    <button class="btn btn-sm btn-outline-primary d-flex align-items-center" (click)="onEdit(item)">
+                      <i class="bi bi-pencil-square me-1"></i>Edit
+                    </button>
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Update Incident -->
+    <div class="col-lg-4">
+      <div class="card border-0 shadow-lg">
+        <div class="card-header tableh text-white">
+          <h5 class="mb-0">Update Incident</h5>
+        </div>
+        <div class="card-body">
+          <form id="incidentForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                [(ngModel)]="incidentObj.name"
+                class="form-control rounded-pill"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="incidentType" class="form-label">Incident Type</label>
+              <select
+                [(ngModel)]="incidentObj.incidentType"
+                class="form-select rounded-pill"
+                id="incidentType"
+                name="incidentType"
+                required
+              >
+                <option value="flood">Flood</option>
+                <option value="landslide">Landslide</option>
+                <option value="tornado">Tornado</option>
+                <option value="tsunami">Tsunami</option>
+                <option value="fireaccident">Fire Accident</option>
+                <option value="earthquake">Earthquake</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="location" class="form-label">Location</label>
+              <input
+                type="text"
+                [(ngModel)]="incidentObj.location"
+                class="form-control rounded-pill"
+                id="location"
+                name="location"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="incidentDateTime" class="form-label">Incident Date & Time</label>
+              <input
+                type="datetime-local"
+                [(ngModel)]="incidentObj.incidentDateTime"
+                class="form-control rounded-pill"
+                id="incidentDateTime"
+                name="incidentDateTime"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="severity" class="form-label">Severity</label>
+              <select
+                [(ngModel)]="incidentObj.severity"
+                class="form-select rounded-pill"
+                id="severity"
+                name="severity"
+                required
+              >
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <textarea
+                [(ngModel)]="incidentObj.description"
+                class="form-control"
+                id="description"
+                name="description"
+                rows="3"
+                style="border-radius: 1rem;"
+              ></textarea>
+            </div>
+
+            <div class="text-center">
+              <button
+                type="button"
+                class="btn btn-warning px-4 rounded-pill"
+                [disabled]="incidentObj.id === 0"
+                (click)="onUpdate()"
+              >
+                Update
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

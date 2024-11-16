@@ -1,0 +1,123 @@
+
+<nav class="navbar">
+  <div class="logo">
+    <a routerLink="/"><img src="assets/logo.png" alt="My Logo" width="90"></a>
+  </div>
+
+</nav>
+
+
+<div class="container">
+  <div class="text">Report Incident</div>
+  <form action="#" id="incidentForm">
+    <!-- Form Row 1 -->
+    <div class="form-row">
+      <div class="input-data">
+        <input type="text" [(ngModel)]="incidentObj.name" id="name" name="name" required />
+        <div class="underline"></div>
+        <label for="name">Your Name</label>
+      </div>
+
+      <div class="input-data">
+        <select
+          [(ngModel)]="incidentObj.incidentType"
+          id="incidentType"
+          name="incidentType"
+          required
+          class="styled-dropdown"
+        >
+          <option value="" disabled selected hidden>Incident Type</option>
+          <option value="Flood">Flood</option>
+          <option value="Landslide">Landslide</option>
+          <option value="Tornado">Tornado</option>
+          <option value="Tsunami">Tsunami</option>
+          <option value="Fire Accident">Fire Accident</option>
+          <option value="Earth Quake">Earth Quake</option>
+          <option value="Other">Other</option>
+        </select>
+
+      </div>
+    </div>
+
+    <!-- Form Row 2 -->
+    <div class="form-row">
+      <div class="input-data">
+        <input
+          type="datetime-local"
+          [(ngModel)]="incidentObj.incidentDateTime"
+          id="incidentDateTime"
+          name="incidentDateTime"
+          required
+        />
+        
+        <div class="underline"></div>
+        <label for="incidentDateTime">Incident Date & Time</label>
+      </div>
+      
+      
+
+      <div class="input-data">
+        <select
+          [(ngModel)]="incidentObj.severity"
+          id="severity"
+          name="severity"
+          required
+          class="styled-dropdown"
+        >
+          <option value="" disabled selected hidden>Severity</option>
+          <option value="Low">Low</option>
+          <option value="Moderate">Moderate</option>
+          <option value="High">High</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Form Row 3 -->
+    <div class="form-row">
+      <div class="input-data">
+        <input
+          type="text"
+          [(ngModel)]="coords"
+          [(ngModel)]="incidentObj.location"
+          id="location"
+          name="location"
+          required
+        />
+        <div class="underline"></div>
+        <label for="location">Location</label>
+      </div>
+      <div class="input-data">
+        <button
+          type="button"
+          (click)="fetchCurrentLocation()"
+          class="location-btn"
+        >
+          Fetch Current Location
+        </button>
+      </div>
+    </div>
+
+    <!-- Form Row 4 -->
+    <div class="form-row">
+      <div class="input-data textarea">
+        <textarea
+          rows="4"
+          [(ngModel)]="incidentObj.description"
+          id="description"
+          name="description"
+          required
+        ></textarea>
+        <div class="underline"></div>
+        <label for="description">Description about the Incident</label>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-row submit-btn">
+      <div class="input-data">
+        <div class="inner"></div>
+        <input type="submit" value="Submit" (click)="onSubmit()" />
+      </div>
+    </div>
+  </form>
+</div>

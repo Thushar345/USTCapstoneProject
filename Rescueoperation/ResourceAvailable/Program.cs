@@ -1,8 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ResourceAvailableAPI.Data;
 using ResourceAvailableAPI.Repositories;
-using System.Web.Http.Cors;
-
+using Microsoft.AspNetCore.Cors;
 
 namespace ResourceAvailableAPI
 {

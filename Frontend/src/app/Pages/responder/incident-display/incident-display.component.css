@@ -1,0 +1,149 @@
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  padding-right: 40px;
+  height: 80px;
+  background-color: #000A46; /* Dark blue for navbar */
+}
+
+.navbar .logo img {
+  height: 50px; /* Adjust logo height */
+  border-radius: 5px;
+}
+
+.nav-links ul {
+  display: flex; /* Align items horizontally */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul li {
+  margin-left: 20px; /* Space between links */
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-links ul li a:hover {
+  text-decoration: underline; /* Optional hover effect */
+  color: #d0f4ff; /* Optional hover color */
+}
+
+.nav-links ul li .btn {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: 2px solid rgb(255, 255, 255); /* Button border */
+  border-radius: 15px; /* Rounded corners */
+  background-color: transparent; /* Transparent background */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Buttons */
+.nav-links ul li .btn:hover {
+  background-color: #f9faff; /* Cyan background on hover */
+  color: #18005a; /* Black text on hover */
+  text-decoration: none; /* Remove underline */
+}
+
+
+
+
+/* Table Container */
+.table-container {
+  padding: 20px;
+  margin: auto;
+  max-width: 100%;
+  overflow-x: auto; /* Ensure table is scrollable on smaller screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for materialistic effect */
+  border-radius: 30px; /* Rounded corners */
+  background: #fff; /* White background */
+  border-left: 8px solid #e4fdff; /* Green left border for a unique touch */
+  border-bottom: 8px solid #e4fdff; /* Green bottom border for a unique touch */
+
+}
+
+/* Table */
+.modern-table {
+  width: 100%;
+  border-collapse: separate; /* To allow border spacing */
+  border-spacing: 0 8px; /* Add space between rows */
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for materialistic effect */
+}
+
+/* Table Headers */
+.modern-table th {
+  text-align: left;
+  padding: 15px 10px;
+  background-color: #f0f4f8; /* Light gray-blue for header */
+  color: #333; /* Darker text */
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+/* Table Body */
+.modern-table td {
+  padding: 15px 10px;
+  background-color: #fff;
+  color: #444;
+  font-size: 14px;
+  border: 1px solid #ddd; /* Optional border for individual cells */
+  border-radius: 10px;
+  
+}
+
+/* Hover Effect */
+.modern-table tbody tr:hover {
+  background-color: #f9fafb; /* Light gray hover effect */
+  transition: background-color 0.3s ease;
+}
+
+/* Alternate Row Color */
+.modern-table tbody tr:nth-child(even) {
+  background-color: #f7f9fc; /* Slightly lighter gray for alternate rows */
+}
+
+
+/* Button Style for Allocate Button */
+.buttona {
+  padding: 5px 10px; /* Increase padding for a larger button */
+  font-size: 16px; /* Set a comfortable font size */
+  color: rgb(255, 255, 255);
+  background-color: #260080; /* Dark blue background */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  font-weight: bold; 
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and active effects */
+}
+
+/* Hover Effect */
+.buttona:hover {
+  background-color: #1d3a5d; /* Slightly lighter dark blue on hover */
+  transform: translateY(-2px); /* Subtle raise on hover */
+}
+
+/* Active State (when clicked) */
+.buttona:active {
+  background-color: #000000; /* Darker blue when the button is pressed */
+  transform: translateY(1px); /* Button "pressed" effect */
+}
+
+/* Disabled State (if applicable) */
+.buttona:disabled {
+  background-color: #b0bec5; /* Gray background */
+  cursor: not-allowed; /* Cursor changes to indicate disabled state */
+}

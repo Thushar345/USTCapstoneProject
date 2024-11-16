@@ -1,0 +1,42 @@
+<nav class="navbar">
+  <div class="logo">
+    <a routerLink="/"><img src="assets/logo.png" alt="My Logo" width="90"></a>
+  </div>
+  
+  <div class="nav-links">
+    <ul>
+      <li><a routerLink="/app-incident-display" class="btn">Incidents List</a></li>
+      <li><a routerLink="/app-resource-avl" class="btn">Resource Availiable</a></li>
+      <li><a routerLink="/app-resource-allocation" class="btn">Resources Allocated</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="table-container">
+  <table class="modern-table">
+    <thead>
+      <tr>
+        <th>ResourceId</th>
+        <th>ResourceType</th>
+        <th>ResourceName</th>
+        <th>NumberOfAvailable</th>
+        <th>TotalAvailable</th>
+        <th>ContactInfo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Keep the @for loop as it is -->
+      @for (item of resourceList; track $index) { 
+        <tr>
+          <td>{{ item.resourceId }}</td>
+          <td>{{ item.resourceType }}</td>
+          <td>{{ item.resourceName }}</td>
+          <td>{{ item.numberOfAvailable }}</td>
+          <td>{{ item.totalAvailable }}</td>
+          <td>{{ item.contactInfo }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

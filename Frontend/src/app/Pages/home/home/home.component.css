@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Acme', sans-serif;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-right: 40px;
+    height: 80px;
+    background-color: #000A46; /* Dark blue for navbar */
+}
+
+.navbar .logo img {
+    height: 50px; /* Adjust logo height */
+    border-radius: 5px;
+}
+
+.nav-links ul {
+    display: flex; /* Align items horizontally */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin-left: 20px; /* Space between links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links ul li a:hover {
+    text-decoration: underline; /* Optional hover effect */
+    color: #d0f4ff; /* Optional hover color */
+}
+
+.nav-links ul li .btn {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 255, 255); /* Button border */
+    border-radius: 15px; /* Rounded corners */
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Buttons */
+.nav-links ul li .btn:hover {
+    background-color: #f9faff; /* Cyan background on hover */
+    color: #18005a; /* Black text on hover */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Home Section Styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin-bottom: 60px; /* Spacing before About section */
+    background-color: #ffffff; /* White background for container */
+}
+
+.quote-section {
+    flex: 1;
+    padding-right: 20px;
+    margin-top: 50px;
+}
+
+.quote-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px; /* Space between the two quotes */
+}
+
+.highlight {
+    color: rgb(0, 146, 0); /* Green color for "Saving" */
+}
+
+.empowerment-text {
+    margin-top: 120px;
+    font-size: 1.4em; /* Increase the font size as needed */
+    color: #000000;
+}
+
+.image-section {
+    flex: 1;
+    margin-top: -50px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth; /* This enables smooth scrolling when an anchor link is clicked */
+}
+
+/* About Section Styling (Now inside the same container) */
+#about {
+    padding: 30px;
+    background-color: #ffffff; /* White background for About section */
+    border-radius: 10px;
+
+    max-width: 90%;
+    margin: 40px auto;
+}
+
+#about h1, #about h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#about p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#about ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#about a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#about a:hover {
+    text-decoration: underline;
+}

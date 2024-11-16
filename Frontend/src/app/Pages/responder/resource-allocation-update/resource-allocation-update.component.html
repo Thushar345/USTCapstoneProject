@@ -1,0 +1,97 @@
+
+<nav class="navbar">
+  <div class="logo">
+    <a routerLink="/"><img src="assets/logo.png" alt="My Logo" width="90"></a>
+  </div>
+  
+  <div class="nav-links">
+    <ul>
+      <li><a routerLink="/app-incident-display" class="btn">Incidents List</a></li>
+      <li><a routerLink="/app-resource-avl" class="btn">Resource Availiable</a></li>
+      <li><a routerLink="/app-resource-allocation" class="btn">Resources Allocated</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<div class="update-container">
+
+  <!-- Wrapper for both Allocation Table and Form -->
+  <div class="allocation-wrapper">
+    <!-- Allocation List (Left Side) -->
+    <div class="allocation-list">
+      <h2>Allocations</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Allocation ID</th>
+            <th>Incident ID</th>
+            <th>Resource Name</th>
+            <th>Quantity Allocated</th>
+            <th>Location</th>
+            <th>Severity</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let allocation of allocationList">
+            <td>{{ allocation.allocationId }}</td>
+            <td>{{ allocation.incidentId }}</td>
+            <td>{{ allocation.resourceName }}</td>
+            <td>{{ allocation.quantityAllocated }}</td>
+            <td>{{ allocation.location }}</td>
+            <td>{{ allocation.severity }}</td>
+            <td>
+              <button class="btn btn-warning" (click)="onEdit(allocation)">Edit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Resource Allocation Edit Form (Right Side) -->
+    <div class="edit-form">
+      <form #allocationForm="ngForm" (ngSubmit)="onUpdate()">
+        <div class="form-group">
+          <label for="allocationId">Allocation ID</label>
+          <input
+            type="text"
+            id="allocationId"
+            [(ngModel)]="allocationObj.allocationId"
+            name="allocationId"
+            readonly
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="resourceName">Resource Name</label>
+          <input
+            type="text"
+            id="resourceName"
+            [(ngModel)]="allocationObj.resourceName"
+            name="resourceName"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="quantityAllocated">Quantity Allocated</label>
+          <input
+            type="number"
+            id="quantityAllocated"
+            [(ngModel)]="allocationObj.quantityAllocated"
+            name="quantityAllocated"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-warning">Update Allocation</button>
+      </form>
+    </div>
+  </div>
+</div>

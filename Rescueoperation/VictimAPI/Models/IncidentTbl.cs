@@ -14,7 +14,7 @@ public partial class IncidentTbl
 
     public DateTime? IncidentDateTime { get; set; }
 
-    public string Severity{ get; set; }
+    public string? Severity{ get; set; }
 
     public string? Description { get; set; }
 }

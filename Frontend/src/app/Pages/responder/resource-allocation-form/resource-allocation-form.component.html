@@ -1,0 +1,75 @@
+
+<nav class="navbar">
+  <div class="logo">
+    <a routerLink="/"><img src="assets/logo.png" alt="My Logo" width="90"></a>
+  </div>
+  
+  <div class="nav-links">
+    <ul>
+      <li><a routerLink="/app-incident-display" class="btn">Incidents List</a></li>
+      <li><a routerLink="/app-resource-avl" class="btn">Resource Availiable</a></li>
+      <li><a routerLink="/app-resource-allocation" class="btn">Resources Allocated</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="form-container">
+  <div class="form-header text-center">
+    <h2>Resource Allocation Form</h2>
+  </div>
+  <form id="resourceAllocationForm" class="styled-form">
+    <div class="form-group">
+      <label for="incidentId">Incident ID:</label>
+      <input
+        type="number"
+        [(ngModel)]="resourceAllocationObj.incidentId"
+        class="form-control"
+        id="incidentId"
+        name="incidentId"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="resourceName">Resource Name:</label>
+      <select
+        [(ngModel)]="resourceAllocationObj.resourceName"
+        class="form-control"
+        id="resourceName"
+        name="resourceName"
+        required
+      >
+        <option value="" disabled selected>Select a Resource</option>
+        <option value="helicopter">Helicopter</option>
+        <option value="fire-engine">Fire Engine</option>
+        <option value="ambulance">Ambulance</option>
+        <option value="rescue-boat">Rescue Boat</option>
+        <option value="command-vehicle">Command Vehicle</option>
+        <option value="crane">Crane</option>
+        <option value="medical-team">Medical Team</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="quantityAllocated">Quantity Allocated:</label>
+      <input
+        type="number"
+        [(ngModel)]="resourceAllocationObj.quantityAllocated"
+        class="form-control"
+        id="quantityAllocated"
+        name="quantityAllocated"
+        required
+      />
+    </div>
+
+    <button
+      type="submit"
+      class="btn btn-primary btn-block"
+      (click)="onSubmit()"
+    >
+      Submit
+    </button>
+  </form>
+</div>
