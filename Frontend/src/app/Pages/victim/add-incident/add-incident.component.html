@@ -1,95 +1,124 @@
-<h2>Add New Incident</h2>
-<div class="form-container">
-  <div class="form-header text-center">
-    <h2>Incident Form</h2>
+
+<nav class="navbar">
+  <div class="logo">
+    <a routerLink="/"><img src="assets/logo.png" alt="My Logo" width="90"></a>
   </div>
-  <form id="incidentForm">
-    <div class="form-group">
-      <label for="name">UserName:</label>
-      <input
-        type="text"
-        [(ngModel)]="incidentObj.name"
-        class="form-control"
-        id="name"
-        name="name"
-        required
-      />
+
+</nav>
+
+
+<div class="container">
+  <div class="text">Report Incident</div>
+  <form action="#" id="incidentForm">
+    <!-- Form Row 1 -->
+    <div class="form-row">
+      <div class="input-data">
+        <input type="text" [(ngModel)]="incidentObj.name" id="name" name="name" required />
+        <div class="underline"></div>
+        <label for="name">Your Name</label>
+      </div>
+
+      <div class="input-data">
+        <select
+          [(ngModel)]="incidentObj.incidentType"
+          id="incidentType"
+          name="incidentType"
+          required
+        >
+          <option value="" disabled selected hidden></option>
+          <option value="flood">Flood</option>
+          <option value="landslide">Landslide</option>
+          <option value="tornado">Tornado</option>
+          <option value="tsunami">Tsunami</option>
+          <option value="fireaccident">Fire Accident</option>
+          <option value="earthquake">Earth Quake</option>
+          <option value="other">Other</option>
+
+        </select>
+        <div class="underline"></div>
+        <label for="incidentType">Incident Type</label>
+      </div>
     </div>
 
-    <div class="form-group">
-      <label for="incidentType">Incident Type:</label>
-      <select
-        [(ngModel)]="incidentObj.incidentType"
-        class="form-control"
-        id="incidentType"
-        name="incidentType"
-        required
-      >
-        <option value="flood">Flood</option>
-        <option value="landslide">Landslide</option>
-        <option value="tornado">Tornado</option>
-        <option value="tsunami">Tsunami</option>
-        <option value="fireaccident">Fire Accident</option>
-      </select>
+    <!-- Form Row 2 -->
+    <div class="form-row">
+      <div class="input-data">
+        <input
+          type="datetime-local"
+          [(ngModel)]="incidentObj.incidentDateTime"
+          id="incidentDateTime"
+          name="incidentDateTime"
+          placeholder="Incident Date&Time"
+          required
+        />
+        
+        <div class="underline"></div>
+        <!-- <label for="incidentDateTime">Incident Date & Time</label> -->
+      </div>
+
+      <div class="input-data">
+        <select
+          [(ngModel)]="incidentObj.severity"
+          id="severity"
+          name="severity"
+          required
+        >
+          <option value="" disabled selected hidden></option>
+          <option value="low">Low</option>
+          <option value="moderate">Moderate</option>
+          <option value="high">High</option>
+        </select>
+        <div class="underline"></div>
+        <label for="severity">Severity</label>
+      </div>
     </div>
 
-    <div class="form-group">
-      <label for="location">Location:</label>
-      <input
-        type="text"
-        [(ngModel)]="incidentObj.location"
-        class="form-control"
-        id="location"
-        name="location"
-        required
-      />
+    <!-- Form Row 3 -->
+    <div class="form-row">
+      <div class="input-data">
+        <input
+          type="text"
+          [(ngModel)]="coords"
+          [(ngModel)]="incidentObj.location"
+          id="location"
+          name="location"
+          required
+        />
+        <div class="underline"></div>
+        <label for="location">Location</label>
+      </div>
+      <div class="input-data">
+        <button
+          type="button"
+          (click)="fetchCurrentLocation()"
+          class="location-btn"
+        >
+          Fetch My Location
+        </button>
+      </div>
     </div>
 
-    <div class="form-group">
-      <label for="incidentDateTime">Incident Date & Time:</label>
-      <input
-        type="datetime-local"
-        [(ngModel)]="incidentObj.incidentDateTime"
-        class="form-control"
-        id="incidentDateTime"
-        name="incidentDateTime"
-        required
-      />
+    <!-- Form Row 4 -->
+    <div class="form-row">
+      <div class="input-data textarea">
+        <textarea
+          rows="4"
+          [(ngModel)]="incidentObj.description"
+          id="description"
+          name="description"
+          required
+        ></textarea>
+        <div class="underline"></div>
+        <label for="description">Description about the Incident</label>
+      </div>
     </div>
 
-    <div class="form-group">
-      <label for="severity">Severity:</label>
-      <select
-        [(ngModel)]="incidentObj.severity"
-        class="form-control"
-        id="severity"
-        name="severity"
-        required
-      >
-        <option value="low">Low</option>
-        <option value="moderate">Moderate</option>
-        <option value="high">High</option>
-      </select>
+    <!-- Submit Button -->
+    <div class="form-row submit-btn">
+      <div class="input-data">
+        <div class="inner"></div>
+        <input type="submit" value="Submit" (click)="onSubmit()" />
+      </div>
     </div>
-
-    <div class="form-group">
-      <label for="description">Description:</label>
-      <textarea
-        [(ngModel)]="incidentObj.description"
-        class="form-control"
-        id="description"
-        name="description"
-        rows="3"
-        required
-      ></textarea>
-    </div>
-
-    <button
-      type="submit"
-      class="btn btn-primary btn-block"
-      (click)="onSubmit()"
-    >
-      Submit
-    </button>
   </form>
 </div>
