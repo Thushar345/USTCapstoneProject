@@ -24,19 +24,18 @@
           id="incidentType"
           name="incidentType"
           required
+          class="styled-dropdown"
         >
-          <option value="" disabled selected hidden></option>
-          <option value="flood">Flood</option>
-          <option value="landslide">Landslide</option>
-          <option value="tornado">Tornado</option>
-          <option value="tsunami">Tsunami</option>
-          <option value="fireaccident">Fire Accident</option>
-          <option value="earthquake">Earth Quake</option>
-          <option value="other">Other</option>
-
+          <option value="" disabled selected hidden>Incident Type</option>
+          <option value="Flood">Flood</option>
+          <option value="Landslide">Landslide</option>
+          <option value="Tornado">Tornado</option>
+          <option value="Tsunami">Tsunami</option>
+          <option value="Fire Accident">Fire Accident</option>
+          <option value="Earth Quake">Earth Quake</option>
+          <option value="Other">Other</option>
         </select>
-        <div class="underline"></div>
-        <label for="incidentType">Incident Type</label>
+
       </div>
     </div>
 
@@ -48,13 +47,14 @@
           [(ngModel)]="incidentObj.incidentDateTime"
           id="incidentDateTime"
           name="incidentDateTime"
-          placeholder="Incident Date&Time"
           required
         />
         
         <div class="underline"></div>
-        <!-- <label for="incidentDateTime">Incident Date & Time</label> -->
+        <label for="incidentDateTime">Incident Date & Time</label>
       </div>
+      
+      
 
       <div class="input-data">
         <select
@@ -62,14 +62,13 @@
           id="severity"
           name="severity"
           required
+          class="styled-dropdown"
         >
-          <option value="" disabled selected hidden></option>
-          <option value="low">Low</option>
-          <option value="moderate">Moderate</option>
-          <option value="high">High</option>
+          <option value="" disabled selected hidden>Severity</option>
+          <option value="Low">Low</option>
+          <option value="Moderate">Moderate</option>
+          <option value="High">High</option>
         </select>
-        <div class="underline"></div>
-        <label for="severity">Severity</label>
       </div>
     </div>
 
@@ -93,7 +92,7 @@
           (click)="fetchCurrentLocation()"
           class="location-btn"
         >
-          Fetch My Location
+          Fetch Current Location
         </button>
       </div>
     </div>

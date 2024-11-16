@@ -18,13 +18,14 @@
   <table class="modern-table">
     <thead>
       <tr>
-        <th>IncidentId</th>
-        <th>AllocationId</th>
-        <th>IncidentType</th>
+        <th>Incident Id</th>
+        <th>Allocation Id</th>
+        <th>Incident Type</th>
         <th>Severity</th>
         <th>Location</th>
         <th>ResourceName</th>
         <th>QuantityAllocated</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -37,7 +38,7 @@
           <td>{{ item.location }}</td>
           <td>{{ item.resourceName }}</td>
           <td>{{ item.quantityAllocated }}</td>
-          <td><button (click)="allocateResource(item)">Update</button></td>
+          <td><button class="buttonu" (click)="allocateResource(item)">Update</button></td>
           
         </tr>
       }

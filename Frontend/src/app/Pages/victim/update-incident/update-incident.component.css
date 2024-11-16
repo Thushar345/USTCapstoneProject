@@ -1,4 +1,6 @@
 
+
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -16,6 +18,10 @@
 
 
 
+
+.tableh{
+  background-color: #00106d;
+}
 
 
 /* Styles for card components */
@@ -100,7 +106,7 @@
   }
   
   .btn-warning:hover {
-    background-color: #e0a800;
+    background-color: #9aa8aa;
   }
   
   /* Row and column layout styles */
@@ -125,5 +131,34 @@
   
   .pt-3 {
     padding-top: 1rem !important;
+  }
+  
+
+  body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar-brand span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f8f9fa;
+  }
+  
+  .card {
+    border-radius: 1rem;
+  }
+  
+  .card-header {
+    border-radius: 1rem 1rem 0 0;
+  }
+  
+  .btn-outline-primary {
+    border-radius: 2rem;
+  }
+  
+  .table {
+    border-radius: 0.5rem;
+    overflow: hidden;
   }
   

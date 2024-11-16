@@ -118,3 +118,32 @@
 }
 
 
+/* Button Style for Allocate Button */
+.buttona {
+  padding: 5px 10px; /* Increase padding for a larger button */
+  font-size: 16px; /* Set a comfortable font size */
+  color: rgb(255, 255, 255);
+  background-color: #260080; /* Dark blue background */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  font-weight: bold; 
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and active effects */
+}
+
+/* Hover Effect */
+.buttona:hover {
+  background-color: #1d3a5d; /* Slightly lighter dark blue on hover */
+  transform: translateY(-2px); /* Subtle raise on hover */
+}
+
+/* Active State (when clicked) */
+.buttona:active {
+  background-color: #000000; /* Darker blue when the button is pressed */
+  transform: translateY(1px); /* Button "pressed" effect */
+}
+
+/* Disabled State (if applicable) */
+.buttona:disabled {
+  background-color: #b0bec5; /* Gray background */
+  cursor: not-allowed; /* Cursor changes to indicate disabled state */
+}

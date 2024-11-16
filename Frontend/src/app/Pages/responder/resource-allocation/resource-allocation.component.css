@@ -113,3 +113,25 @@
     background-color: #f7f9fc; /* Slightly lighter gray for alternate rows */
   }
   
+
+
+
+
+  /* Button Style for Allocate Button */
+.buttonu {
+  padding: 5px 10px; /* Increase padding for a larger button */
+  font-size: 16px; /* Set a comfortable font size */
+  color: rgb(255, 255, 255);
+  background-color: #db9600; /* Dark blue background */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  font-weight: bold; 
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and active effects */
+}
+
+/* Hover Effect */
+.buttonu:hover {
+  background-color: #1d3a5d; /* Slightly lighter dark blue on hover */
+  transform: translateY(-2px); /* Subtle raise on hover */
+}
+

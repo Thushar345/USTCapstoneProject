@@ -37,27 +37,29 @@ body{
 
 
 
-.container{
-  max-width: 800px;
-  margin-left: 22%;
-  margin-top: 2%;
-  background: #fff;
-  width: 700px;
-  padding: 25px 40px 10px 40px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-
-}
+  .container {
+    max-width: 800px;
+    margin-left: 22%;
+    margin-top: 2%;
+    background: #fff;
+    width: 700px;
+    height: 520px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* This creates an even shadow on all sides */
+    border-radius: 30px;
+  }
+  
 .container .text{
   text-align: center;
   font-size: 41px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
-  background: -webkit-linear-gradient(right, #40aeb8, #001e72, #11a7b4, #020079);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #000e5f;
+  text-decoration: underline;
+ 
 }
 .container form{
-  padding: 30px 0 0 0;
+  padding: 20px 0 0 0;
 }
 .container form .form-row{
   display: flex;
@@ -253,9 +255,77 @@ textarea:focus ~ .underline:before {
     background-color: #59d8ff;
     color: #fff;
   }
+
+
+
+  /* General Input Data Styles */
+.input-data {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Styled Dropdown */
+.styled-dropdown {
+  width: 100%;
+  padding: 6px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 25px; /* Rounded corners */
+  background-color: #fff;
+  color: #333;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.styled-dropdown:focus {
+  outline: none;
+  border-color: #3498db; /* Focused border color */
+  box-shadow: 0 0 5px rgba(98, 0, 234, 0.5);
+}
+
+/* Dropdown Arrow */
+.styled-dropdown::-ms-expand {
+  display: none; /* Remove default dropdown arrow */
+}
+
+.styled-dropdown::after {
+  content: '▼';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+  color: #333;
+}
+
+/* Label Styles */
+label {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  font-size: 14px;
+  color: #666;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+/* Hide label when dropdown has a value */
+.styled-dropdown:focus + label,
+.styled-dropdown:not(:placeholder-shown) + label {
+  top: -20px;
+  font-size: 12px;
+  color: #6200ea; /* Focused label color */
+}
+
+
+
+.input-data:hover .underline,
+.input-data:focus-within .underline {
+  width: 100%;
+}
+
   
-
-
-
-
 

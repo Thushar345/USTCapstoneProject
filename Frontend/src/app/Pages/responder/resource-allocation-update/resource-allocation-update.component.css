@@ -1,0 +1,203 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-right: 40px;
+    height: 80px;
+    background-color: #0a2240; /* Dark Blue Background */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .navbar .logo img {
+    height: 50px; /* Adjust logo height */
+    border-radius: 5px;
+  }
+  
+  .nav-links ul {
+    display: flex; /* Align items horizontally */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links ul li {
+    margin-left: 20px; /* Space between links */
+  }
+  
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .nav-links ul li a:hover {
+    text-decoration: underline; /* Optional hover effect */
+    color: #b3c9d6; /* Light hover color */
+  }
+  
+  .nav-links ul li .btn {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 255, 255); /* Button border */
+    border-radius: 15px; /* Rounded corners */
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover Effect for Buttons */
+  .nav-links ul li .btn:hover {
+    background-color: #1d3a5d; /* Dark cyan background on hover */
+    color: #f0f8ff; /* Light text on hover */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  
+  /* General page styles */
+  .update-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f4f7fb; /* Soft light blue background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-container h1 {
+    font-size: 2rem;
+    color: #1e3c63; /* Dark blue text color */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Flexbox Layout for table and form */
+  .allocation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+  }
+  
+  /* Allocation List (Left Side) */
+  .allocation-list {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .allocation-list h2 {
+    font-size: 1.5rem;
+    color: #0a2240; /* Dark Blue Title */
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #1d3a5d; /* Dark blue header */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .table .btn-warning {
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .table .btn-warning:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Resource Allocation Edit Form (Right Side) */
+  .edit-form {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    background-color: #f8f8f8;
+  }
+  
+  .form-control:focus {
+    border-color: #2980b9;
+    background-color: #ffffff;
+  }
+  
+  button[type="submit"] {
+    background-color: #0a2240; /* Dark Blue Background */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #1d3a5d; /* Darker Blue on Hover */
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .allocation-wrapper {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .allocation-list,
+    .edit-form {
+      flex: 1 1 100%;
+    }
+  }
+  
+
+
+  

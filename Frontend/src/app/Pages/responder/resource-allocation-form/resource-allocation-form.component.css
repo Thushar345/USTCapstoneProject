@@ -1,0 +1,153 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-right: 40px;
+    height: 80px;
+    background-color: #000A46; /* Dark blue for navbar */
+  }
+  
+  .navbar .logo img {
+    height: 50px; /* Adjust logo height */
+    border-radius: 5px;
+  }
+  
+  .nav-links ul {
+    display: flex; /* Align items horizontally */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links ul li {
+    margin-left: 20px; /* Space between links */
+  }
+  
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .nav-links ul li a:hover {
+    text-decoration: underline; /* Optional hover effect */
+    color: #d0f4ff; /* Optional hover color */
+  }
+  
+  .nav-links ul li .btn {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 255, 255); /* Button border */
+    border-radius: 15px; /* Rounded corners */
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover Effect for Buttons */
+  .nav-links ul li .btn:hover {
+    background-color: #f9faff; /* Cyan background on hover */
+    color: #18005a; /* Black text on hover */
+    text-decoration: none; /* Remove underline */
+  }
+  
+
+
+
+
+  .form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-header {
+    margin-bottom: 20px;
+  }
+  
+  .form-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000a46;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .styled-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+  }
+  
+  input,
+  select {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #000a46;
+    outline: none;
+  }
+  
+  .btn {
+    background-color: #000a46;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #004db3;
+  }
+  
+  .btn-block {
+    width: 100%;
+    text-align: center;
+  }
+  
+
+
+  select.form-control {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+  }
+  
+  select.form-control:focus {
+    border-color: #000a46;
+    outline: none;
+  }
+  

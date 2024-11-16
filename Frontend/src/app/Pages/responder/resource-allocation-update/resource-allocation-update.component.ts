@@ -2,13 +2,13 @@ import { Component, inject, OnInit } from '@angular/core';
 import { AllocateService } from '../../../service/allocate.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';  // Import Router
+import { Router, RouterModule } from '@angular/router';  // Import Router
 
 
 @Component({
   selector: 'app-resource-allocation-update',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, RouterModule],
   templateUrl: './resource-allocation-update.component.html',
   styleUrls: ['./resource-allocation-update.component.css']
 })

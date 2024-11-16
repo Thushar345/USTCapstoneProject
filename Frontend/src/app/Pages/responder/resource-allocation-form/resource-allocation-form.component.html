@@ -1,9 +1,25 @@
-<h2>Add Resource Allocation</h2>
+
+<nav class="navbar">
+  <div class="logo">
+    <a routerLink="/"><img src="assets/logo.png" alt="My Logo" width="90"></a>
+  </div>
+  
+  <div class="nav-links">
+    <ul>
+      <li><a routerLink="/app-incident-display" class="btn">Incidents List</a></li>
+      <li><a routerLink="/app-resource-avl" class="btn">Resource Availiable</a></li>
+      <li><a routerLink="/app-resource-allocation" class="btn">Resources Allocated</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
 <div class="form-container">
   <div class="form-header text-center">
     <h2>Resource Allocation Form</h2>
   </div>
-  <form id="resourceAllocationForm">
+  <form id="resourceAllocationForm" class="styled-form">
     <div class="form-group">
       <label for="incidentId">Incident ID:</label>
       <input
@@ -16,61 +32,24 @@
       />
     </div>
 
-
-    <div class="form-group">
-      <label for="incidentType">Incident Type:</label>
-      <select
-        [(ngModel)]="resourceAllocationObj.incidentType"
-        class="form-control"
-        id="incidentType"
-        name="incidentType"
-        required
-      >
-        <option value="flood">Flood</option>
-        <option value="landslide">Landslide</option>
-        <option value="tornado">Tornado</option>
-        <option value="tsunami">Tsunami</option>
-        <option value="fireaccident">Fire Accident</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="severity">Severity:</label>
-      <select
-        [(ngModel)]="resourceAllocationObj.severity"
-        class="form-control"
-        id="severity"
-        name="severity"
-        required
-      >
-        <option value="low">Low</option>
-        <option value="moderate">Moderate</option>
-        <option value="high">High</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="location">Location:</label>
-      <input
-        type="text"
-        [(ngModel)]="resourceAllocationObj.location"
-        class="form-control"
-        id="location"
-        name="location"
-        required
-      />
-    </div>
-
     <div class="form-group">
       <label for="resourceName">Resource Name:</label>
-      <input
-        type="text"
+      <select
         [(ngModel)]="resourceAllocationObj.resourceName"
         class="form-control"
         id="resourceName"
         name="resourceName"
         required
-      />
+      >
+        <option value="" disabled selected>Select a Resource</option>
+        <option value="helicopter">Helicopter</option>
+        <option value="fire-engine">Fire Engine</option>
+        <option value="ambulance">Ambulance</option>
+        <option value="rescue-boat">Rescue Boat</option>
+        <option value="command-vehicle">Command Vehicle</option>
+        <option value="crane">Crane</option>
+        <option value="medical-team">Medical Team</option>
+      </select>
     </div>
 
     <div class="form-group">

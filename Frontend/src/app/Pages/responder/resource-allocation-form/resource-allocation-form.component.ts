@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-resource-allocation-form',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, RouterModule],
   templateUrl: './resource-allocation-form.component.html',
   styleUrls: ['./resource-allocation-form.component.css']
 })
@@ -23,9 +24,7 @@ export class ResourceAllocationFormComponent {
   http = inject(HttpClient);
 
   onSubmit() {
-    debugger;
     this.http.post("https://localhost:7240/api/ResourceAllocated", this.resourceAllocationObj).subscribe((res: any) => {
-      debugger;
       if (res.allocationId > 0) {
         alert("Resource Allocation Record Created!");
       } else {

@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-submission-success',
+  standalone: true,
+  imports: [RouterModule],
   templateUrl: './submission-success.component.html',
   styleUrls: ['./submission-success.component.css']
 })
