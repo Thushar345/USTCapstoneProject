@@ -1,3 +1,23 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  padding-right: 40px;
+  height: 80px;
+  background-color: #000A46; /* Dark blue for navbar */
+}
+
+.navbar .logo img {
+  height: 50px; /* Adjust logo height */
+  border-radius: 5px;
+}
+
+
+
+
+
 /* Styles for card components */
 .card {
     border-radius: 8px;
