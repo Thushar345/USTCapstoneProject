@@ -26,7 +26,6 @@ export class IncidentDisplayComponent implements OnInit{
 
     constructor(private router: Router) {}
     allocateResource(item: any) {
-      // Navigate to another component, passing the selected incident
       this.router.navigate(['/app-resource-allocation-form'], { state: { incident: item } });
     }
   }

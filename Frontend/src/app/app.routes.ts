@@ -11,6 +11,7 @@ import { LoginComponent } from './Pages/home/auth/login/login.component';
 import { RegisterComponent } from './Pages/home/auth/register/register.component';
 import { HomeComponent } from './Pages/home/home/home.component';
 import { LoginSignupComponent } from './Pages/login-signup/login-signup.component';
+import { ResourceAllocationUpdateComponent } from './Pages/responder/resource-allocation-update/resource-allocation-update.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },  
@@ -24,4 +25,7 @@ export const routes: Routes = [
   { path: 'app-resource-allocation-form', component: ResourceAllocationFormComponent },
   { path: 'submission-success', component: SubmissionSuccessComponent },
   {path: 'login-signup', component: LoginSignupComponent },
+  {path: 'app-resource-allocation-update', component: ResourceAllocationUpdateComponent  },
+
 ];
+//app-resource-allocation-update
