@@ -29,5 +29,25 @@ namespace AggregatorService.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+        [HttpPut]
+        public async Task<IActionResult> UpdateCombinedData([FromBody] CombinedIncidentResource updatedData)
+        {
+            if (updatedData == null || updatedData.incidentId <= 0)
+            {
+                return BadRequest("Invalid data or missing ID.");
+            }
+
+            // Call the service to update the data
+            var result = await _dataAggregatorService.UpdateIncidentResourceAsync(updatedData);
+
+            if (!result)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                                  "Error updating the data.");
+            }
+
+            return Ok("Data updated successfully.");
+        }
+
     }
 }

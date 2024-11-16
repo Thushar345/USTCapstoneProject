@@ -35,7 +35,7 @@ export class LoginComponent {
             this.router.navigate(['app-add-incident']);
           } else if (this.username.includes('@admin.com')) {
             // Navigate to admin page
-            this.router.navigate(['']);
+            this.router.navigate(['app-incident-display']);
           } else {
             // Fallback in case the domain doesn't match any known pattern
             this.router.navigate(['app-update']);
@@ -47,7 +47,7 @@ export class LoginComponent {
         }
       },
       (error) => {
-        console.error('API Error:', error); // Log the full error for debugging
+        console.error('API Error:', error); 
         this.errorMessage = 'Invalid credentials or server error.';
       }
     );

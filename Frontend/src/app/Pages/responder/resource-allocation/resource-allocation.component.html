@@ -28,7 +28,6 @@
       </tr>
     </thead>
     <tbody>
-      <!-- Keep the @for loop as it is -->
       @for (item of allocateList; track $index) { 
         <tr>
           <td>{{ item.incidentId }}</td>
@@ -38,6 +37,8 @@
           <td>{{ item.location }}</td>
           <td>{{ item.resourceName }}</td>
           <td>{{ item.quantityAllocated }}</td>
+          <td><button (click)="allocateResource(item)">Update</button></td>
+          
         </tr>
       }
     </tbody>
