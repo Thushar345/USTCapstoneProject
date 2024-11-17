@@ -45,6 +45,9 @@ namespace AllocateResourceAPI.Migrations
                     b.Property<int>("QuantityAllocated")
                         .HasColumnType("int");
 
+                    b.Property<int>("ResourceId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ResourceName")
                         .IsRequired()
                         .HasMaxLength(100)

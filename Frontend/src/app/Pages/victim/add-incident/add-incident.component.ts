@@ -37,7 +37,7 @@ export class AddIncidentComponent {
 
     this.http.post("https://localhost:7129/api/Incidents", this.incidentObj).subscribe((res: any) => {
       if (res.id > 0) {
-        alert("Incident Record Created!");
+        alert("Report Submitted Successfully");
         // After successful form submission, navigate to the submission-success page
         this.router.navigate(['/submission-success']);
       } else {

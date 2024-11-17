@@ -35,7 +35,7 @@
           <td>{{ item.incidentDateTime | date:'shortDate' }}</td>
           <td>{{ item.severity }}</td>
           <td>{{ item.description }}</td>
-          <td><button class="buttona" (click)="allocateResource(item)">Allocate</button></td>
+          <td><button class="buttona" (click)="allocateResource(item.id)">Allocate</button></td>
         </tr>
       }
     </tbody>

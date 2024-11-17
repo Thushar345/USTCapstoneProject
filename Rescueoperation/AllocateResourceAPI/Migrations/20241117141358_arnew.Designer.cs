@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AllocateResourceAPI.Migrations
 {
     [DbContext(typeof(ResourceAllocationContext))]
-    [Migration("20241113064702_first")]
-    partial class first
+    [Migration("20241117141358_arnew")]
+    partial class arnew
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,6 +46,9 @@ namespace AllocateResourceAPI.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<int>("QuantityAllocated")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ResourceId")
                         .HasColumnType("int");
 
                     b.Property<string>("ResourceName")

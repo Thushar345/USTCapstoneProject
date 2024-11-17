@@ -22,7 +22,7 @@ export const routes: Routes = [
   { path: 'app-incident-display', component: IncidentDisplayComponent },
   { path: 'app-resource-avl', component: ResourceAvlComponent },
   { path: 'app-resource-allocation', component: ResourceAllocationComponent },
-  { path: 'app-resource-allocation-form', component: ResourceAllocationFormComponent },
+  { path: 'app-resource-allocation-form/:incidentId', component: ResourceAllocationFormComponent },
   { path: 'submission-success', component: SubmissionSuccessComponent },
   {path: 'login-signup', component: LoginSignupComponent },
   {path: 'app-resource-allocation-update', component: ResourceAllocationUpdateComponent  },

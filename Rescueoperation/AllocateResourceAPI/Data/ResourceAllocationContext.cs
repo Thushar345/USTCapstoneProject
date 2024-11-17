@@ -39,6 +39,9 @@ namespace AllocateResourceAPI.Data
 
                 entity.Property(e => e.Location)
                       .HasMaxLength(100); // Max Length for Location
+                entity.Property(e => e.ResourceId)
+                       .IsRequired()
+                       .HasColumnType("int");
 
                 entity.Property(e => e.ResourceName)
                       .HasMaxLength(100); // Max Length for Resource Name

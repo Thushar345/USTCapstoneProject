@@ -20,35 +20,21 @@
     <h2>Resource Allocation Form</h2>
   </div>
   <form id="resourceAllocationForm" class="styled-form">
-    <div class="form-group">
-      <label for="incidentId">Incident ID:</label>
-      <input
-        type="number"
-        [(ngModel)]="resourceAllocationObj.incidentId"
-        class="form-control"
-        id="incidentId"
-        name="incidentId"
-        required
-      />
-    </div>
+    
 
     <div class="form-group">
       <label for="resourceName">Resource Name:</label>
       <select
-        [(ngModel)]="resourceAllocationObj.resourceName"
+        [(ngModel)]="resourceAllocationObj.resourceId"
         class="form-control"
         id="resourceName"
         name="resourceName"
         required
       >
         <option value="" disabled selected>Select a Resource</option>
-        <option value="helicopter">Helicopter</option>
-        <option value="fire-engine">Fire Engine</option>
-        <option value="ambulance">Ambulance</option>
-        <option value="rescue-boat">Rescue Boat</option>
-        <option value="command-vehicle">Command Vehicle</option>
-        <option value="crane">Crane</option>
-        <option value="medical-team">Medical Team</option>
+        <option *ngFor="let resource of resources" [value]="resource.resourceId">
+          {{ resource.resourceName }} (Available: {{ resource.numberOfAvailable }})
+        </option>
       </select>
     </div>
 

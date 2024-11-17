@@ -67,6 +67,26 @@ namespace ResourceAvailableAPI.Controllers
             return NoContent();
         }
 
+
+        [HttpPut("allocate/{id}")]
+        public async Task<IActionResult> AllocateResource(int id, [FromBody] int quantity)
+        {
+            try
+            {
+                await _repository.DecrementResourceQuantityAsync(id, quantity);
+                return Ok(new { Message = "Resource allocated successfully." });
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { Message = ex.Message });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
+        }
+
+
         // POST: api/Resources
         [HttpPost]
         public async Task<ActionResult<Resource>> PostResource(Resource resource)
