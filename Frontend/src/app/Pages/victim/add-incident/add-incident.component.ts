@@ -35,7 +35,7 @@ export class AddIncidentComponent {
     }
 
 
-    this.http.post("https://localhost:7129/api/Incidents", this.incidentObj).subscribe((res: any) => {
+    this.http.post("http://localhost:7777/api/Incidents", this.incidentObj).subscribe((res: any) => {
       if (res.id > 0) {
         alert("Incident Record Created!");
         // After successful form submission, navigate to the submission-success page

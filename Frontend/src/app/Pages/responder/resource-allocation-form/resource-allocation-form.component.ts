@@ -24,7 +24,7 @@ export class ResourceAllocationFormComponent {
 
   onSubmit() {
     debugger;
-    this.http.post("https://localhost:7240/api/ResourceAllocated", this.resourceAllocationObj).subscribe((res: any) => {
+    this.http.post("http://localhost:5000/resourceallocated", this.resourceAllocationObj).subscribe((res: any) => {
       debugger;
       if (res.allocationId > 0) {
         alert("Resource Allocation Record Created!");

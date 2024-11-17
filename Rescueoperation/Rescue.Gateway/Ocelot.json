@@ -1,0 +1,113 @@
+﻿{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5000"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/auth/register",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/AuthAPI/register",
+      "DownstreamScheme": "Http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5006
+        }
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 10
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/auth/login",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/AuthAPI/login",
+      "DownstreamScheme": "Http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5006
+        }
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 10
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/resourceallocated",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamPathTemplate": "/api/ResourceAllocated",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5250
+        }
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 10
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/resources",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/Resources",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5251
+        }
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 10
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/incidents",
+      "UpstreamHttpMethod": [ "POST", "GET" ],
+      "DownstreamPathTemplate": "/api/Incidents",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5224
+        }
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 10
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/combineddata",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/DataAggregator/combineddata",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5014
+        }
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 10
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/resourceallocated/{allocationid}",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamPathTemplate": "/api/ResourceAllocated/{allocationid}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5250
+        }
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 10
+      }
+    }
+
+  ]
+}

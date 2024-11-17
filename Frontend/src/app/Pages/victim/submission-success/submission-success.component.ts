@@ -14,4 +14,7 @@ export class SubmissionSuccessComponent {
     // Navigate to the update-incident page
     this.router.navigate(['/app-update-incident']);
   }
+  navigateToHome() {
+    this.router.navigate(['']);  // Replace '/home' with your actual home route
+  }
 }

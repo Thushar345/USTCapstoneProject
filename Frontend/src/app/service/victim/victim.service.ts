@@ -14,7 +14,7 @@ export class VictimService {
 
  GetIncident() {
 
-  return this.http.get("https://localhost:7129/api/Incidents")
+  return this.http.get("http://localhost:5000/Incidents")
 
  }
 }

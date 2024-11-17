@@ -8,10 +8,11 @@ export class AllocateService {
  constructor(private http: HttpClient) { }
 
  GetAllocate() {
-  return this.http.get("https://localhost:7098/api/DataAggregator/combineddata");
+  return this.http.get("http://localhost:5000/combineddata");
  }
 
  UpdateAllocate(allocationid: number, data: any) {
-    return this.http.put(`https://localhost:7240/api/ResourceAllocated/${allocationid}`, data);
-  }  
+  return this.http.put(`http://localhost:5000/resourceallocated/${allocationid}`, data);
+}
+
 }

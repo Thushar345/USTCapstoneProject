@@ -11,9 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VictimAPI", "VictimAPI\Vict
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResourceAvailableAPI", "ResourceAvailable\ResourceAvailableAPI.csproj", "{D4967102-FEE5-4762-917E-63F94F745431}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggregatorService", "AggregatorService\AggregatorService.csproj", "{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggregatorService", "AggregatorService\AggregatorService.csproj", "{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllocateResourceAPI", "AllocateResourceAPI\AllocateResourceAPI.csproj", "{E40D854A-5C12-4961-B766-A7F7CCC6CE27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AllocateResourceAPI", "AllocateResourceAPI\AllocateResourceAPI.csproj", "{E40D854A-5C12-4961-B766-A7F7CCC6CE27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rescue.Gateway", "Rescue.Gateway\Rescue.Gateway.csproj", "{37407A3B-BAD6-485D-A524-5A5B1B820AD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{DAFC893E-431C-4C8A-8060-309E4B0257F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,10 @@ Global
 		{E40D854A-5C12-4961-B766-A7F7CCC6CE27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E40D854A-5C12-4961-B766-A7F7CCC6CE27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E40D854A-5C12-4961-B766-A7F7CCC6CE27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37407A3B-BAD6-485D-A524-5A5B1B820AD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37407A3B-BAD6-485D-A524-5A5B1B820AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37407A3B-BAD6-485D-A524-5A5B1B820AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37407A3B-BAD6-485D-A524-5A5B1B820AD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +59,7 @@ Global
 		{D4967102-FEE5-4762-917E-63F94F745431} = {AC3D6462-43A4-4FB7-9094-8BC2DEB6AB4D}
 		{184DBDE3-1696-4EFD-BF0E-E62FF0830DA8} = {AC3D6462-43A4-4FB7-9094-8BC2DEB6AB4D}
 		{E40D854A-5C12-4961-B766-A7F7CCC6CE27} = {AC3D6462-43A4-4FB7-9094-8BC2DEB6AB4D}
+		{37407A3B-BAD6-485D-A524-5A5B1B820AD0} = {DAFC893E-431C-4C8A-8060-309E4B0257F3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BAA494BD-EC42-4C23-9E71-8EB88AF24E17}

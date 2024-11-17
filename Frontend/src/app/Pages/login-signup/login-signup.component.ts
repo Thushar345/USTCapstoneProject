@@ -58,7 +58,7 @@ export class LoginSignupComponent implements OnInit  {
     };
 
     // Call the API endpoint
-    this.http.post<RegisterResponse>('https://localhost:7133/api/AuthAPI/register', registrationPayload).subscribe(
+    this.http.post<RegisterResponse>('http://localhost:5000/auth/register', registrationPayload).subscribe(
       (response) => {
         // Handle successful registration response
         if (response?.issuccess) {
@@ -87,52 +87,48 @@ export class LoginSignupComponent implements OnInit  {
         alert(`An error occurred: ${error.message || 'Unknown error'}`);
       }
     );
-  }
+    }
 
-
-
-
-
+    newdata:any={
+      username: "",
+      password: ""
+    }
   //login code starts from here
-  username: string = '';
-  passwordl: string = '';
-  errorMessage: string = '';
+  
 
 
   login() {
     console.log('Login button clicked!');
+    // console.log('Username:', this.username);
+    // console.log('Password:', this.passwordl);
+  
+    // const loginPayload = { email: this.username, password: this.passwordl };
 
-    const loginPayload = { username: this.username, password: this.passwordl };
-
-    this.http.post('https://localhost:7133/api/AuthAPI/login', loginPayload).subscribe(
+   
+  
+    this.http.post("http://localhost:5000/auth/login", this.newdata).subscribe(
       (response: any) => {
-        console.log('API Response:', response); // Log the full response
-
+        console.log('API Response:', response);
+  
         if (response.isSuccess && response.result && response.result.token) {
-          localStorage.setItem('token', response.result.token); // Store the token correctly
-
-          // Check email domain to navigate accordingly
-          if (this.username.includes('@user.com') || this.username.includes('@gmail.com')) {
+          localStorage.setItem('token', response.result.token);
+          if (this.newdata.username.includes('@user.com') || this.newdata.username.includes('@gmail.com')) {
             this.router.navigate(['app-add-incident']);
-          } else if (this.username.includes('@admin.com')) {
-            // Navigate to admin page
+          } else if (this.newdata.username.includes('@admin.com')) {
             this.router.navigate(['app-incident-display']);
           } else {
-            // Fallback in case the domain doesn't match any known pattern
             this.router.navigate(['app-update']);
           }
         } else {
-          this.errorMessage = 'Login failed. Token is missing or invalid.';
           console.error('Login failed: Token is missing or invalid');
           this.router.navigate(['/']);
         }
       },
       (error) => {
-        console.error('API Error:', error); // Log the full error for debugging
-        this.errorMessage = 'Invalid credentials or server error.';
+        console.error('API Error:', error);
+        alert(`Error: ${error.message || 'Unknown error'}`);
       }
     );
   }
-
-
+  
 }

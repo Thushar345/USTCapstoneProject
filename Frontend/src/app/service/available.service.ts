@@ -14,7 +14,7 @@ export class ResourceService {
 
  GetResource() {
 
-  return this.http.get("https://localhost:7066/api/Resources")
+  return this.http.get("http://localhost:5000/Resources")
 
  }
 

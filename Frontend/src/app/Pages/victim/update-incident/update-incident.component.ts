@@ -2,6 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-update-incident',
@@ -11,7 +12,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./update-incident.component.css'] // Fixed typo
 })
 export class UpdateIncidentComponent implements OnInit {
- 
+
   incidentObj: any = {
     "id": 0,
     "name": "",
@@ -22,15 +23,17 @@ export class UpdateIncidentComponent implements OnInit {
     "description": ""
   };
 
-  incidentList: any[] = []; 
-  http = inject(HttpClient); 
+  incidentList: any[] = [];
+  http = inject(HttpClient);
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.loadIncidents();
   }
 
   loadIncidents() {
-    this.http.get('https://localhost:7129/api/Incidents').subscribe((res: any) => {
+    this.http.get('http://localhost:7777/api/Incidents').subscribe((res: any) => {
       this.incidentList = res;
     });
   }
@@ -39,15 +42,15 @@ export class UpdateIncidentComponent implements OnInit {
     this.incidentObj = { ...data }; // Shallow copy to avoid reference issues
     console.log("Editing Incident:", this.incidentObj); // Verify that `id` and other fields are set correctly
   }
-  
+
   onUpdate() {
-    console.log(this.incidentObj)
-    this.http.put(`https://localhost:7129/api/Incidents/${this.incidentObj.id}`, this.incidentObj)
-    .subscribe(
+    console.log(this.incidentObj);
+    this.http.put(`http://localhost:7777/api/Incidents/${this.incidentObj.id}`, this.incidentObj)
+      .subscribe(
         (res: any) => {
           if (res && res.id) {
             alert("Incident Record Updated!");
-            this.loadIncidents(); 
+            this.router.navigate(['app-login']); // Replace with your target route
           } else {
             alert("Some Problem in Incident Updation");
           }
@@ -58,5 +61,4 @@ export class UpdateIncidentComponent implements OnInit {
         }
       );
   }
- 
 }
