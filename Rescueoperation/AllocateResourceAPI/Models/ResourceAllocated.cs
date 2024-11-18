@@ -13,6 +13,7 @@ public partial class ResourceAllocated
     public string Severity { get; set; }
 
     public string Location { get; set; }
+    public int ResourceId { get; set; }
 
     public string ResourceName { get; set; }
 

@@ -25,8 +25,8 @@ export class IncidentDisplayComponent implements OnInit{
 
 
     constructor(private router: Router) {}
-    allocateResource(item: any) {
-      this.router.navigate(['/app-resource-allocation-form'], { state: { incident: item } });
+    allocateResource(incidentid: any) {
+      this.router.navigate(['/app-resource-allocation-form',incidentid]);
     }
   }
 

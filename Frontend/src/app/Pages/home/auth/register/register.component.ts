@@ -36,7 +36,7 @@ export class RegisterComponent {
     };
 
     // Call the API endpoint
-    this.http.post<RegisterResponse>('https://localhost:7133/api/AuthAPI/register', registrationPayload).subscribe(
+    this.http.post<RegisterResponse>('https://localhost:5006/api/AuthAPI/register', registrationPayload).subscribe(
       (response) => {
         // Handle successful registration response
         if (response?.issuccess) {

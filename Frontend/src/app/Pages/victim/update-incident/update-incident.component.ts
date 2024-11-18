@@ -31,7 +31,7 @@ export class UpdateIncidentComponent implements OnInit {
   }
 
   loadIncidents() {
-    this.http.get('https://localhost:7129/api/Incidents').subscribe((res: any) => {
+    this.http.get('https://localhost:5000/Incidents').subscribe((res: any) => {
       this.incidentList = res;
     });
   }
@@ -43,7 +43,7 @@ export class UpdateIncidentComponent implements OnInit {
   
   onUpdate() {
     console.log(this.incidentObj)
-    this.http.put(`https://localhost:7129/api/Incidents/${this.incidentObj.id}`, this.incidentObj)
+    this.http.put(`https://localhost:5000/Incidents/${this.incidentObj.id}`, this.incidentObj)
     .subscribe(
         (res: any) => {
           if (res && res.id) {

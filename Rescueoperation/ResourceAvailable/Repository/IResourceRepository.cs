@@ -10,6 +10,7 @@ namespace ResourceAvailableAPI.Repositories
         Task<Resource> GetResourceAsync(int id);
         Task AddResourceAsync(Resource resource);
         Task UpdateResourceAsync(Resource resource);
+        Task DecrementResourceQuantityAsync(int resourceId, int quantity);
         Task DeleteResourceAsync(int id);
         Task<bool> ResourceExistsAsync(int id);
     }

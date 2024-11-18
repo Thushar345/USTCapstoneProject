@@ -37,6 +37,26 @@ namespace ResourceAvailableAPI.Repositories
             await _context.SaveChangesAsync();
         }
 
+
+        public async Task DecrementResourceQuantityAsync(int resourceId, int quantity)
+        {
+            var resource = await _context.Resources.FindAsync(resourceId);
+            if (resource == null)
+            {
+                throw new KeyNotFoundException("Resource not found.");
+            }
+
+            if (resource.NumberOfAvailable < quantity)
+            {
+                throw new InvalidOperationException("Insufficient resources available.");
+            }
+
+            resource.NumberOfAvailable -= quantity;
+            _context.Entry(resource).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+        }
+
+
         public async Task DeleteResourceAsync(int id)
         {
             var resource = await _context.Resources.FindAsync(id);

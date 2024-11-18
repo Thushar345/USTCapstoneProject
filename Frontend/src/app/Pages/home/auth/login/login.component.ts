@@ -23,7 +23,7 @@ export class LoginComponent {
 
     const loginPayload = { username: this.username, password: this.password };
 
-    this.http.post('https://localhost:7133/api/AuthAPI/login', loginPayload).subscribe(
+    this.http.post('https://localhost:5006/api/AuthAPI/login', loginPayload).subscribe(
       (response: any) => {
         console.log('API Response:', response); // Log the full response
 
