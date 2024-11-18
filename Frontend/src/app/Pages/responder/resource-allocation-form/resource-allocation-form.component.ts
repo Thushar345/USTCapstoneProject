@@ -20,9 +20,11 @@ export class ResourceAllocationFormComponent implements OnInit{
     severity: "",
     location: "",
     resourceId: 0,
-    resourceName: '',
+    resourceName: "",
     quantityAllocated: 0
   };
+
+  selectedResource: any;
 
   resourceService = inject(ResourceService) 
 
@@ -61,23 +63,32 @@ export class ResourceAllocationFormComponent implements OnInit{
       } 
 
 
-   onSubmit() {
-    // First call the POST API to create the resource allocation record
-    this.http.post("https://localhost:7240/api/ResourceAllocated", this.resourceAllocationObj).subscribe(
-      (res: any) => {
-        if (res.allocationId > 0) {
-          // If the POST is successful, proceed to call the PUT API
-          this.decrementResourceQuantity();
-        } else {
-          alert("There was an issue creating the resource allocation record.");
-        }
-      },
-      error => {
-        console.error("Error during POST request:", error);
-        alert("Failed to create resource allocation record.");
+      onSubmit() {
+        this.http.get(`https://localhost:5000/Resources/${this.resourceAllocationObj.resourceId}`).subscribe(
+          (resource: any) => {
+            this.resourceAllocationObj.resourceName = resource.resourceName;
+      
+            this.http.post("https://localhost:5000/resourceallocated", this.resourceAllocationObj).subscribe(
+              (res: any) => {
+                if (res.allocationId > 0) {
+                  this.decrementResourceQuantity();
+                } else {
+                  alert("There was an issue creating the resource allocation record.");
+                }
+              },
+              error => {
+                console.error("Error during POST request:", error);
+                alert("Failed to create resource allocation record.");
+              }
+            );
+          },
+          error => {
+            console.error("Error during GET request:", error);
+            alert("Failed to fetch resource name.");
+          }
+        );
       }
-    );
-  }
+      
   
   // Method to call the PUT API
   decrementResourceQuantity() {
@@ -91,7 +102,7 @@ export class ResourceAllocationFormComponent implements OnInit{
       return;
     }
   
-    this.http.put(`https://localhost:7066/api/Resources/allocate/${resourceId}`, quantity).subscribe(
+    this.http.put(`https://localhost:5000/Resources/allocate/${resourceId}`, quantity).subscribe(
       () => {
         alert("Resource quantity successfully decremented.");
       },

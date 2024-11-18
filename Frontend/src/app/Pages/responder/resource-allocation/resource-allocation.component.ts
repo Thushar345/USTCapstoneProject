@@ -17,26 +17,37 @@ export class ResourceAllocationComponent {
     this.loadResources();
   }
 
-  loadResources() {
-    this.allocateService.GetAllocate().subscribe((res: any) => {
-      this.allocateList = res;
-      console.log(this.allocateList);
-    });
-  }
-  updateResource(updatedData: any) {
-    const allocationId = updatedData.allocationId;  // Extract allocationId from updatedData
-  
-    this.allocateService.UpdateAllocate(allocationId, updatedData).subscribe(
-      (response) => {
-        console.log('Update successful', response);
-        // Optionally reload resources after update
-        this.loadResources();
+  loadResources(): void {
+    this.allocateService.GetAllocate().subscribe(
+      (res: any[]) => {
+        this.allocateList = res.sort((a, b) => b.allocationId - a.allocationId); // Sort by allocationId descending
+        console.log('Loaded resources:', this.allocateList);
       },
       (error) => {
-        console.error('Update failed', error);
+        console.error('Failed to load resources:', error);
       }
     );
   }
+  
+  updateResource(updatedData: any): void {
+    const allocationId = updatedData.allocationId;
+  
+    if (!allocationId) {
+      console.error('Allocation ID is missing in the updated data.');
+      return;
+    }
+  
+    this.allocateService.UpdateAllocate(allocationId, updatedData).subscribe(
+      (response) => {
+        console.log('Update successful:', response);
+        this.loadResources(); // Reload resources after a successful update
+      },
+      (error) => {
+        console.error('Update failed:', error);
+      }
+    );
+  }
+  
   
   constructor(private router: Router) {}
   

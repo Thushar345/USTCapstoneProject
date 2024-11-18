@@ -3,6 +3,7 @@ import { AllocateService } from '../../../service/allocate.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';  // Import Router
+import { ResourceService } from '../../../service/available.service';
 
 
 @Component({
@@ -26,6 +27,10 @@ export class ResourceAllocationUpdateComponent implements OnInit {
   allocationList: any[] = [];
   allocateService = inject(AllocateService);
 
+  resourceService = inject(ResourceService)
+  
+  resources : any[] = []
+
   constructor(
     private router: Router,  // Inject Router
  
@@ -33,13 +38,28 @@ export class ResourceAllocationUpdateComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadAllocations();
+    this.fetchAvailableResources();
   }
 
   loadAllocations() {
-    this.allocateService.GetAllocate().subscribe((res: any) => {
-      this.allocationList = res;  // Load the allocations into the list
-    });
+    this.allocateService.GetAllocate().subscribe(
+      (res: any[]) => {
+        this.allocationList = res.sort((a, b) => b.allocationId - a.allocationId); // Sort by allocationId descending
+        console.log('Loaded resources:', this.allocationList);
+      },
+      (error) => {
+        console.error('Failed to load resources:', error);
+      }
+    );
   }
+
+  fetchAvailableResources(): void {
+    this.resourceService.GetResource().subscribe((res: any) => { 
+      this.resources = res; 
+      console.log(this.resources);
+      }) 
+      
+      } 
 
   // This method is called when the user clicks the 'Edit' button on an allocation item
   onEdit(allocation: any) {
@@ -51,7 +71,6 @@ export class ResourceAllocationUpdateComponent implements OnInit {
   // This method is triggered when the user submits the form to update the allocation
   onUpdate() {
     console.log(this.allocationObj);  // Log the updated data
-  
     const allocationId = this.allocationObj.allocationId;  // Extract allocationId from allocationObj
   
     // Call UpdateAllocate with the allocationId and the updated data
@@ -62,7 +81,7 @@ export class ResourceAllocationUpdateComponent implements OnInit {
           this.loadAllocations();  // Reload allocations after update
           this.resetForm();  // Optionally reset the form after update
         } else {
-          alert("Allocation success.");
+          alert("Allocation Updated.");
           this.router.navigate(['app-resource-allocation']);
         }
       },
@@ -72,6 +91,9 @@ export class ResourceAllocationUpdateComponent implements OnInit {
       }
     );
   }
+
+
+  
 
   // Reset the form after successful update
   resetForm() {
