@@ -12,8 +12,8 @@ using VictimAPI.Data;
 namespace VictimAPI.Migrations
 {
     [DbContext(typeof(VictimContext))]
-    [Migration("20241108044901_first")]
-    partial class first
+    [Migration("20241119044000_v")]
+    partial class v
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,7 +53,6 @@ namespace VictimAPI.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Severity")
-                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
