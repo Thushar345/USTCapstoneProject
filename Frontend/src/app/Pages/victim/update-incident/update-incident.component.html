@@ -3,6 +3,11 @@
   <div class="logo">
     <a routerLink="/"><img src="assets/logo.png" alt="My Logo" width="90"></a>
   </div>
+  <div class="nav-links">
+    <ul>
+      <li><button class="btn-logout" (click)="logout()">Logout</button></li> <!-- Logout button -->
+    </ul>
+  </div>
 </nav>
 
 
@@ -70,13 +75,13 @@
                 name="incidentType"
                 required
               >
-                <option value="flood">Flood</option>
-                <option value="landslide">Landslide</option>
-                <option value="tornado">Tornado</option>
-                <option value="tsunami">Tsunami</option>
-                <option value="fireaccident">Fire Accident</option>
-                <option value="earthquake">Earthquake</option>
-                <option value="other">Other</option>
+                <option value="Flood">Flood</option>
+                <option value="Landslide">Landslide</option>
+                <option value="Tornado">Tornado</option>
+                <option value="Tsunami">Tsunami</option>
+                <option value="Fire Accident">Fire Accident</option>
+                <option value="Earthquake">Earthquake</option>
+                <option value="Other">Other</option>
               </select>
             </div>
 
@@ -113,9 +118,9 @@
                 name="severity"
                 required
               >
-                <option value="low">Low</option>
-                <option value="moderate">Moderate</option>
-                <option value="high">High</option>
+                <option value="Low">Low</option>
+                <option value="Moderate">Moderate</option>
+                <option value="High">High</option>
               </select>
             </div>
 

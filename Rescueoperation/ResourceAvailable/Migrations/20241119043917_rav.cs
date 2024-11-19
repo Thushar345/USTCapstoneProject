@@ -5,7 +5,7 @@
 namespace ResourceAvailableAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class first : Migration
+    public partial class rav : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

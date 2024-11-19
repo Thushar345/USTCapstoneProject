@@ -35,7 +35,7 @@ export class AddIncidentComponent {
     }
 
 
-    this.http.post("https://localhost:5000/Incidents", this.incidentObj).subscribe((res: any) => {
+    this.http.post("https://localhost:5000/incidents", this.incidentObj).subscribe((res: any) => {
       if (res.id > 0) {
         alert("Report Submitted Successfully");
         // After successful form submission, navigate to the submission-success page
@@ -84,6 +84,13 @@ export class AddIncidentComponent {
 
 
 
+  logout() {
+    // Remove the token from localStorage
+    localStorage.removeItem('token');
+
+    // Redirect the user to the login page
+    this.router.navigate(['/login-signup']);
+  }
 
 
   

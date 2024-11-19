@@ -18,6 +18,49 @@
 
 
 
+.nav-links ul {
+  display: flex; /* Align items horizontally */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul li {
+  margin-left: 20px; /* Space between links */
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-links ul li a:hover {
+  text-decoration: underline; /* Optional hover effect */
+  color: #d0f4ff; /* Optional hover color */
+}
+
+.nav-links ul li .btn {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: 2px solid rgb(255, 255, 255); /* Button border */
+  border-radius: 15px; /* Rounded corners */
+  background-color: transparent; /* Transparent background */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Buttons */
+.nav-links ul li .btn:hover {
+  background-color: #f9faff; /* Cyan background on hover */
+  color: #18005a; /* Black text on hover */
+  text-decoration: none; /* Remove underline */
+}
+
+
 
 .tableh{
   background-color: #00106d;
@@ -162,3 +205,23 @@
     overflow: hidden;
   }
   
+
+
+
+  .btn-logout{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border: 2px solid rgb(255, 255, 255); /* Button border */
+    border-radius: 15px; /* Rounded corners */
+    background-color: rgb(255, 136, 0); /* Transparent background */
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .btn-logout:hover{
+    background-color: #fab575; /* Cyan background on hover */
+    color: #18005a; /* Black text on hover */
+    text-decoration: none; /* Remove underline */
+  }

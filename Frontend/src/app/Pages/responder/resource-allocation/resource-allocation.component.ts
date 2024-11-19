@@ -54,5 +54,17 @@ export class ResourceAllocationComponent {
   allocateResource(item: any) {
     this.router.navigate(['app-resource-allocation-update'], { state: { incident: item } });
   }
+
+
+  logout() {
+    // Remove the token from localStorage
+    localStorage.removeItem('token');
+
+    // Redirect the user to the login page
+    this.router.navigate(['/login-signup']);
+  }
+
+  
+
   
 }

@@ -50,7 +50,6 @@ namespace VictimAPI.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Severity")
-                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 

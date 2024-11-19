@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace VictimAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class first : Migration
+    public partial class v : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,7 +21,7 @@ namespace VictimAPI.Migrations
                     IncidentType = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     Location = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     IncidentDateTime = table.Column<DateTime>(type: "datetime", nullable: true),
-                    Severity = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    Severity = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
                     Description = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true)
                 },
                 constraints: table =>

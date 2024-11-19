@@ -11,8 +11,8 @@ using ResourceAvailableAPI.Data;
 namespace ResourceAvailableAPI.Migrations
 {
     [DbContext(typeof(ResourceContext))]
-    [Migration("20241109043944_first")]
-    partial class first
+    [Migration("20241119043917_rav")]
+    partial class rav
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
