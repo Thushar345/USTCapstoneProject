@@ -7,25 +7,26 @@ import { ResourceAllocationFormComponent } from './Pages/responder/resource-allo
 import { SubmissionSuccessComponent } from './Pages/victim/submission-success/submission-success.component';
 import { AddIncidentComponent } from './Pages/victim/add-incident/add-incident.component';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './Pages/home/auth/login/login.component';
-import { RegisterComponent } from './Pages/home/auth/register/register.component';
 import { HomeComponent } from './Pages/home/home/home.component';
 import { LoginSignupComponent } from './Pages/login-signup/login-signup.component';
 import { ResourceAllocationUpdateComponent } from './Pages/responder/resource-allocation-update/resource-allocation-update.component';
+import { AuthGuard } from './guard/auth.guard';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },  
-  { path: 'app-login', component: LoginComponent },
-  { path: 'app-register', component: RegisterComponent },
-  { path: 'app-add-incident', component: AddIncidentComponent },
-  { path: 'app-update-incident', component: UpdateIncidentComponent },  
-  { path: 'app-incident-display', component: IncidentDisplayComponent },
-  { path: 'app-resource-avl', component: ResourceAvlComponent },
-  { path: 'app-resource-allocation', component: ResourceAllocationComponent },
-  { path: 'app-resource-allocation-form/:incidentId', component: ResourceAllocationFormComponent },
-  { path: 'submission-success', component: SubmissionSuccessComponent },
-  {path: 'login-signup', component: LoginSignupComponent },
-  {path: 'app-resource-allocation-update', component: ResourceAllocationUpdateComponent  },
+  { path: 'login-signup', component: LoginSignupComponent },
+
+  // for the victim
+  { path: 'app-add-incident', component: AddIncidentComponent, canActivate: [AuthGuard] },
+  { path: 'submission-success', component: SubmissionSuccessComponent, canActivate: [AuthGuard] },
+  { path: 'app-update-incident', component: UpdateIncidentComponent, canActivate: [AuthGuard] },  
+
+  //for the responder
+  { path: 'app-incident-display', component: IncidentDisplayComponent, canActivate: [AuthGuard] },
+  { path: 'app-resource-avl', component: ResourceAvlComponent, canActivate: [AuthGuard] },
+  { path: 'app-resource-allocation', component: ResourceAllocationComponent, canActivate: [AuthGuard] },
+  { path: 'app-resource-allocation-form/:incidentId', component: ResourceAllocationFormComponent, canActivate: [AuthGuard] },
+  {path: 'app-resource-allocation-update', component: ResourceAllocationUpdateComponent, canActivate: [AuthGuard]  },
 
 ];
-//app-resource-allocation-update
+

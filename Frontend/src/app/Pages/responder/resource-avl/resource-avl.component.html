@@ -8,6 +8,7 @@
       <li><a routerLink="/app-incident-display" class="btn">Incidents List</a></li>
       <li><a routerLink="/app-resource-avl" class="btn">Resource Availiable</a></li>
       <li><a routerLink="/app-resource-allocation" class="btn">Resources Allocated</a></li>
+      <li><button class="btn-logout" (click)="logout()">Logout</button></li> <!-- Logout button -->
     </ul>
   </div>
 </nav>
@@ -17,12 +18,12 @@
   <table class="modern-table">
     <thead>
       <tr>
-        <th>ResourceId</th>
-        <th>ResourceType</th>
-        <th>ResourceName</th>
-        <th>NumberOfAvailable</th>
-        <th>TotalAvailable</th>
-        <th>ContactInfo</th>
+        <th>Resource Id</th>
+        <th>Resource Type</th>
+        <th>Resource Name</th>
+        <th>Now Available</th>
+        <th>Total Resource</th>
+        <th>Contact Info</th>
       </tr>
     </thead>
     <tbody>

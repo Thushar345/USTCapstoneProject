@@ -2,7 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-update-incident',
@@ -25,6 +25,8 @@ export class UpdateIncidentComponent implements OnInit {
 
   incidentList: any[] = []; 
   http = inject(HttpClient); 
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.loadIncidents();
@@ -59,5 +61,16 @@ export class UpdateIncidentComponent implements OnInit {
         }
       );
   }
+
+
+
+  logout() {
+    // Remove the token from localStorage
+    localStorage.removeItem('token');
+
+    // Redirect the user to the login page
+    this.router.navigate(['/login-signup']);
+  }
+
  
 }

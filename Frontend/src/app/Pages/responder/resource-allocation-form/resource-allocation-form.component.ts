@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ResourceService } from '../../../service/available.service';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -27,10 +27,11 @@ export class ResourceAllocationFormComponent implements OnInit{
   selectedResource: any;
 
   resourceService = inject(ResourceService) 
+  
 
   resources : any[] = []
 
-  constructor(private route: ActivatedRoute, private http: HttpClient) {}
+  constructor(private route: ActivatedRoute, private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
     this.initializeAllocate();
@@ -104,7 +105,7 @@ export class ResourceAllocationFormComponent implements OnInit{
   
     this.http.put(`https://localhost:5000/Resources/allocate/${resourceId}`, quantity).subscribe(
       () => {
-        alert("Resource quantity successfully decremented.");
+        alert("Allocated the Resource");
       },
       error => {
         console.error("Error during PUT request:", error);
@@ -112,5 +113,17 @@ export class ResourceAllocationFormComponent implements OnInit{
       }
     );
   }
+
+
+
+  logout() {
+    // Remove the token from localStorage
+    localStorage.removeItem('token');
+
+    // Redirect the user to the login page
+    this.router.navigate(['/login-signup']);
+  }
+
+
   
 }
