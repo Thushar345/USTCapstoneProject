@@ -28,6 +28,18 @@ export class IncidentDisplayComponent implements OnInit{
     allocateResource(incidentid: any) {
       this.router.navigate(['/app-resource-allocation-form',incidentid]);
     }
+
+
+    logout() {
+      // Remove the token from localStorage
+      localStorage.removeItem('token');
+  
+      // Redirect the user to the login page
+      this.router.navigate(['/login-signup']);
+    }
+  
+
+
   }
 
 

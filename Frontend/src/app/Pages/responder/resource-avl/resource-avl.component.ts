@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core'; 
 import { ResourceService } from '../../../service/available.service';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 @Component({ 
  selector: 'app-resource-avl', 
  standalone: true, 
@@ -11,6 +11,9 @@ import { RouterModule } from '@angular/router';
 export class ResourceAvlComponent implements OnInit { 
  resourceService = inject(ResourceService) 
  resourceList: any[] = []; 
+
+ constructor(private router: Router) {}
+
  ngOnInit(): void { 
  this.loadResources(); 
  } 
@@ -21,5 +24,17 @@ export class ResourceAvlComponent implements OnInit {
  }) 
  
  } 
+
+
+
+ logout() {
+    // Remove the token from localStorage
+    localStorage.removeItem('token');
+
+    // Redirect the user to the login page
+    this.router.navigate(['/login-signup']);
+  }
+
+
  
 } 
