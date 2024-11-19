@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AllocateResourceAPI.Migrations
 {
     [DbContext(typeof(ResourceAllocationContext))]
-    [Migration("20241117141358_arnew")]
-    partial class arnew
+    [Migration("20241119043829_ra")]
+    partial class ra
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
