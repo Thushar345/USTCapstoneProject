@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ResourceService } from '../../../service/available.service';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { EmailService } from '../../../service/email.service';
 
 @Component({
   selector: 'app-resource-allocation-form',
@@ -31,7 +32,7 @@ export class ResourceAllocationFormComponent implements OnInit{
 
   resources : any[] = []
 
-  constructor(private route: ActivatedRoute, private http: HttpClient, private router: Router) {}
+  constructor(private route: ActivatedRoute, private http: HttpClient, private router: Router, private emailService: EmailService) {}
 
   ngOnInit(): void {
     this.initializeAllocate();
@@ -65,30 +66,52 @@ export class ResourceAllocationFormComponent implements OnInit{
 
 
       onSubmit() {
+        // Fetch the resource details first
         this.http.get(`https://localhost:5000/Resources/${this.resourceAllocationObj.resourceId}`).subscribe(
           (resource: any) => {
             this.resourceAllocationObj.resourceName = resource.resourceName;
       
-            this.http.post("https://localhost:5000/resourceallocated", this.resourceAllocationObj).subscribe(
-              (res: any) => {
-                if (res.allocationId > 0) {
-                  this.decrementResourceQuantity();
-                } else {
-                  alert("There was an issue creating the resource allocation record.");
-                }
+            // Fetch the incident details to get the location
+            this.http.get(`https://localhost:5000/Incidents/${this.resourceAllocationObj.incidentId}`).subscribe(
+              (incident: any) => {
+                this.resourceAllocationObj.location = incident.location; // Assume `location` is a property in the incident object
+                console.log('Location fetched:', this.resourceAllocationObj.location);
+      
+                // Proceed with posting the resource allocation
+                this.http.post("https://localhost:5000/resourceallocated", this.resourceAllocationObj).subscribe(
+                  (res: any) => {
+                    if (res.allocationId > 0) {
+                      this.decrementResourceQuantity();
+      
+                      // Send email notification
+                      this.emailService.sendResourceAllocationEmail(
+                        this.resourceAllocationObj.location,
+                        this.resourceAllocationObj.resourceName,
+                        this.resourceAllocationObj.quantityAllocated
+                      );
+                    } else {
+                      alert("There was an issue creating the resource allocation record.");
+                    }
+                  },
+                  error => {
+                    console.error("Error during POST request:", error);
+                    alert("Failed to create resource allocation record.");
+                  }
+                );
               },
               error => {
-                console.error("Error during POST request:", error);
-                alert("Failed to create resource allocation record.");
+                console.error("Error fetching incident details:", error);
+                alert("Failed to fetch incident details.");
               }
             );
           },
           error => {
-            console.error("Error during GET request:", error);
-            alert("Failed to fetch resource name.");
+            console.error("Error fetching resource details:", error);
+            alert("Failed to fetch resource details.");
           }
         );
       }
+      
       
   
   // Method to call the PUT API
