@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AllocateResourceAPI.Migrations
 {
     [DbContext(typeof(ResourceAllocationContext))]
-    [Migration("20241119043829_ra")]
+    [Migration("20241120034346_ra")]
     partial class ra
     {
         /// <inheritdoc />
