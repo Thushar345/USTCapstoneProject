@@ -48,8 +48,8 @@ export class AddIncidentComponent {
 
 
   coords: string = ''; // Stores the coordinates as "latitude, longitude"
-  address: string = ''; // Stores the address
-  error: string = ''; // Stores error messages
+  address: string = ''; 
+  error: string = ''; 
 
   constructor(private mapService: MapService) {}
 
@@ -64,9 +64,9 @@ export class AddIncidentComponent {
           // Use the MapService to fetch the address
           this.mapService.getAddressFromCoords(latitude, longitude).subscribe(
             (response: any) => {
-              const fetchedAddress = response.display_name; // Address from API
-              this.incidentObj.location = fetchedAddress; // Populate the address into the form's location field
-              this.error = ''; // Clear any existing errors
+              const fetchedAddress = response.display_name; 
+              this.incidentObj.location = fetchedAddress; 
+              this.error = ''; 
             },
             (error) => {
               this.error = 'Unable to fetch the location address. Please try again.';
@@ -85,10 +85,8 @@ export class AddIncidentComponent {
 
 
   logout() {
-    // Remove the token from localStorage
     localStorage.removeItem('token');
 
-    // Redirect the user to the login page
     this.router.navigate(['/login-signup']);
   }
 
