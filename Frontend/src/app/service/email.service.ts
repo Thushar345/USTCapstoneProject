@@ -8,7 +8,6 @@ export class EmailService {
   constructor() {}
 
   /**
-   * Sends an email notification to the rescue team with resource allocation details.
    * @param location - The location where the resources are required.
    * @param resourceName - The name of the allocated resource.
    * @param quantity - The quantity of the allocated resource.
